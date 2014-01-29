@@ -6,3 +6,8 @@ set columns=90
 " disable toolbar and scrollbar -don't like em.
 set guioptions-=T
 set guioptions-=r
+
+" freaking windows...
+if has("win32")
+    set guifont=Consolas:h11
+endif

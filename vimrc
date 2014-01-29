@@ -13,3 +13,8 @@ set softtabstop=4
 syntax on " force on if editor doesn't enable this by default
 set number " show line numbers
 set colorcolumn=80 " display a red band fixed at 80 characters right
+
+" freaking windows...
+if has("win32")
+    set encoding=utf-8
+endif
