@@ -3,6 +3,10 @@
 " |  2013-2014 Dani Rodríguez   | "
 " ------------------------------- "
 
+" install vim-pathogen (requires submodule installed)
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
 " 4 line space indenting
 set autoindent
 set expandtab
