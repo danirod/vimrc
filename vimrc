@@ -22,3 +22,8 @@ set colorcolumn=80 " display a red band fixed at 80 characters right
 if has("win32")
     set encoding=utf-8
 endif
+
+" set github colorscheme as default scheme (requires submoduling it)
+" https://github.com/endel/vim-github-colorscheme
+colorscheme github
+
