@@ -2,7 +2,7 @@
 
 This repository acts as a backup for my configuration files.
 It also is a nice showcase of my configuration, which I'm proud of.
-I know I'm a noob at Git but take anything you want from here.
+I know I'm a noob at vim but take anything you want from here.
 
 ## Install
 
