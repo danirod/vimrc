@@ -23,7 +23,8 @@ if has("win32")
     set encoding=utf-8
 endif
 
-" set github colorscheme as default scheme (requires submoduling it)
-" https://github.com/endel/vim-github-colorscheme
-colorscheme github
+" Uncomment this to use github as default color scheme
+"colorscheme github
 
+set background=dark
+colorscheme solarized

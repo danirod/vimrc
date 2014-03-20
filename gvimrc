@@ -11,5 +11,5 @@ set guioptions-=r
 if has("win32")
     set guifont=Consolas:h11
 elseif has("gui_gtk2")
-    set guifont=DejaVu\ Sans\ Mono\ 9
+    set guifont=DejaVu\ Sans\ Mono\ 10
 endif
