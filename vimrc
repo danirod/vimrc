@@ -23,8 +23,5 @@ if has("win32")
     set encoding=utf-8
 endif
 
-" Uncomment this to use github as default color scheme
-"colorscheme github
-
-set background=dark
-colorscheme solarized
+" Use github theme
+colorscheme github
