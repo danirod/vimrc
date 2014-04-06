@@ -25,3 +25,6 @@ endif
 
 " Use github theme
 colorscheme github
+
+" nerdtree
+command NT NERDTree
