@@ -1,2 +1,6 @@
 *.swp # ahh, the ironies...
 
+# Ignore pathogen. It can be installed by running
+# install-pathogen.sh. There's no need to track
+# this file in my repository.
+autoload/pathogen.vim

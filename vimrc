@@ -3,9 +3,13 @@
 " |  2013-2014 Dani Rodríguez   | "
 " ------------------------------- "
 
-" install vim-pathogen (requires submodule installed)
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+" Pathogen is a nice plugin management tool for vim. It takes care of
+" autoloading and managing my plugins so that I don't have to manually
+" add them to my vimrc file. Instead, Pathogen will load them at runtime.
+" Running install script is required.
+filetype off                " pathogen needs filetype disabled.
+call pathogen#infect()      " load our shit 
+filetype plugin indent on   " reenable filetype settings again.
 
 " 4 line space indenting
 set autoindent
