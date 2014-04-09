@@ -9,6 +9,7 @@
 " Running install script is required.
 filetype off                " pathogen needs filetype disabled.
 call pathogen#infect()      " load our shit 
+call pathogen#helptags()    " load help tags too.
 filetype plugin indent on   " reenable filetype settings again.
 
 " 4 line space indenting
