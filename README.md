@@ -1,4 +1,4 @@
-# About
+## About
 
 This my vimrc setup. Keeping your vim setup in a Git repository
 is cool because you can track the changes you do to your set up,
@@ -15,9 +15,9 @@ done. I like to browse other vimrc repos here at GitHub and learn
 from their experience. I know my vimrc setup is tiny and modest but
 I'm proud of it.
 
-# Install
+## Install
 
-## Requirements
+### Requirements
 
 * **Linux / MacOS X**: installation is done as a shell script.
   I've only tested it on Linux, I believe it should work on MacOS X
@@ -32,7 +32,7 @@ I'm proud of it.
 
 Optionally you can also have **gvim** (vim-gtk) or **MacVim** if you want.
 
-## Install
+### Install
 
 You can grab a [zipball](http://github.com/danirod/vimrc/archive/master.zip)
 or a [tarball](http://github.com/danirod/vimrc/archive/master.tar.gz) if you
@@ -52,7 +52,7 @@ Install script will automatically clone vundle, symlink vimrc to ~/.vimrc
 and gvimrc to ~/.gvimrc and install all my plugins into Vundle. You can do
 that manually if you want.
 
-# About
+## Plugins
 
 My vimrc setup is powered by [Vundle](http://github.com/gmarik/Vundle.vim).
 Vundle is an awesome plugin manager for Vim that takes care of automatically
