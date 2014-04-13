@@ -3,13 +3,19 @@
 " |  2013-2014 Dani Rodríguez   | "
 " ------------------------------- "
 
-" Configure vundle
+" Configure vundle and install bundles
   set nocompatible " disable vi compatibility mode
   filetype off " required by vundle (?)
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc()
   filetype plugin indent on " re-enable plugin and indent
   syntax on " re-enable syntax mode
+
+  Plugin 'endel/vim-github-colorscheme' " GitHub syntax color scheme.
+  Plugin 'altercation/vim-colors-solarized' " Solarized color scheme.
+  Plugin 'scrooloose/nerdtree' " A tree explorer plugin for vim.
+  Plugin 'wlangstroth/vim-racket' " Add Racket language support for vim.
+  Plugin 'tpope/vim-fugitive' " a Git wrapper so awesome it should be illegal.
 
 " 4 line space indenting
 set autoindent
