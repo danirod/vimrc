@@ -3,6 +3,14 @@
 " |  2013-2014 Dani Rodríguez   | "
 " ------------------------------- "
 
+" Configure vundle
+  set nocompatible " disable vi compatibility mode
+  filetype off " required by vundle (?)
+  set rtp+=~/.vim/bundle/vundle/
+  call vundle#rc()
+  filetype plugin indent on " re-enable plugin and indent
+  syntax on " re-enable syntax mode
+
 " 4 line space indenting
 set autoindent
 set expandtab
