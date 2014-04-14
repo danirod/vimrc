@@ -33,8 +33,5 @@ if has("win32")
     set encoding=utf-8
 endif
 
-" Use github theme
-colorscheme github
-
 " nerdtree
 command NT NERDTree
