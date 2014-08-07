@@ -20,10 +20,10 @@ I'm proud of it.
 ### Requirements
 
 * **Linux / MacOS X**: installation is done as a shell script.
-  I've only tested it on Linux, I believe it should work on MacOS X
-  since it also has a terminal. It should work on **Windows** too
-  if you get Bash for Windows; haven't tested it, though. There's
-  __NO__ support for Windows's Command Prompt and it won't have.
+  I've tested my setup on Linux and on MacOS X and it works out of
+  the box. It should work on **Windows** too if you get Bash for
+  Windows first; although I haven't tested it. There's **NO**
+  support for sucky Windows Command Prompt and it won't ever have.
 * **vim 7.3 +**: it's my version, I've tested my setup against this
   version. I don't know if it'll work on older versions of vim.
   Vundle was also tested on vim 7.3.
