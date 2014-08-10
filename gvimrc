@@ -28,10 +28,15 @@ elseif has("gui_gtk2")
     " If using GTK2, use DejaVu Sans. This font is quite nice
     " and it's installed on almost any Linux distribution.
     set guifont=DejaVu\ Sans\ Mono\ 10
+elseif has("gui_macvim")
+    " If on MacVim, you're on a Mac. Newer versions of OS X
+    " include Menlo font. It looks like DejaVu Sans Mono,
+    " actually. However, I still prefer Monaco.
+    set guifont=Monaco:h12
 endif
 
 " If using GVim, switch to Solarized Dark.
-if has("gui_gtk2")
+if has("gui_gtk2") || has("gui_macvim")
     set background=dark
     colorscheme solarized
 endif
