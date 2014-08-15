@@ -4,18 +4,35 @@
 " ------------------------------- "
 
 " Configure vundle and install bundles
-  set nocompatible " disable vi compatibility mode
-  filetype off " required by vundle (?)
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
-  filetype plugin indent on " re-enable plugin and indent
-  syntax on " re-enable syntax mode
+set nocompatible " disable vi compatibility mode
 
-  Plugin 'endel/vim-github-colorscheme' " GitHub syntax color scheme.
-  Plugin 'altercation/vim-colors-solarized' " Solarized color scheme.
-  Plugin 'scrooloose/nerdtree' " A tree explorer plugin for vim.
-  Plugin 'wlangstroth/vim-racket' " Add Racket language support for vim.
-  Plugin 'tpope/vim-fugitive' " a Git wrapper so awesome it should be illegal.
+" ==============
+" Vundle plugins
+" ==============
+" Init Vundle
+filetype off " required by Vundle.
+set rtp+=~/.vim/bundle/vundle
+call vundle#begin()
+
+" Plug-ins
+Plugin 'scrooloose/nerdtree' " A tree explorer plugin for vim.
+Plugin 'tpope/vim-fugitive' " a Git wrapper so awesome it should be illegal.
+Plugin 'parkr/vim-jekyll' " Jekyll support
+
+" Language support
+Plugin 'wlangstroth/vim-racket'                 " Racket
+Plugin 'jQuery'                                 " jQuery
+
+" Colorschemes
+Plugin 'endel/vim-github-colorscheme'           " GitHub
+Plugin 'altercation/vim-colors-solarized'       " Solarized
+Plugin 'sickill/vim-monokai'                    " Monokai
+Plugin 'benjaminwhite/Benokai'                  " Benokai
+Plugin 'cschlueter/vim-wombat'                  " Wombat
+
+" Finish Vundle initialization
+call vundle#end()
+filetype plugin indent on " Restore filetype
 
 " 4 line space indenting
 set autoindent
