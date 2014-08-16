@@ -1,42 +1,36 @@
-" gvimrc: settings exclusive to GVim
+" danirod's gvimrc settings
+" Specific settings for graphical clients such as gVim or MacVim
+" Author and maintainer: Dani Rodríguez <danirod@outlook.com>
+" Get info and fork at: http://github.com/danirod/vimrc
+"                       http://bitbucket.org/danirod/vimrc (mirror)
+" 
+" LICENSE:
+" You are free to read and study this bundle or snippets of it and to use
+" it on your own vimrc settings. Feel free to tweak and adapt my vimrc to
+" suit your needs and to make the changes yours. Attribution to this vimrc
+" is not required although is thanked.
 
-" Resize a window to a given size, using only one command instead of two.
-function! ResizeWindow(width, height)
-    let &columns=a:width
-    let &lines=a:height
-endfunction
+" Disable toolbar
+set guioptions-=T
 
-" Some handy shortcuts for common window sizes.
-command ResSmall call ResizeWindow(80, 25)
-command ResNorm call ResizeWindow(100, 30)
-command ResBig call ResizeWindow(140, 35)
-ResNorm " initial window size
-
-" Modify the way gvim works:
-set guioptions-=T   " disable toolbar
-"set guioptions-=r  " uncomment to disable scrollbars.
-
-" Set font.
-if has("win32")
-    " Win32 uses Fixedsys by default... UGLY! Use Consolas
-    " Consolas is only shipped by default on Windows Vista+.
-    " Who cares; Windows XP support has finished anyway.
-    " This script is NOT compatible with Windows XP.
-    " Unless you install Consolas font by your own, of course.
+" Set font. It depends on which operating system I'm using.
+if has("win32") || has("win64")
+    " Windows: Hands down for Consolas. It's a nice looking font and it
+    " supports Unicode, which Fixedsys (default gVim font) doesn't.
     set guifont=Consolas:h11
 elseif has("gui_gtk2")
-    " If using GTK2, use DejaVu Sans. This font is quite nice
-    " and it's installed on almost any Linux distribution.
-    set guifont=DejaVu\ Sans\ Mono\ 10
+    " Linux: Ubuntu Mono looks nice. Fallback to DejaVu Sans Mono in
+    " case the system doesn't have it installed. Some mainstream distros
+    " now ship with Droid Sans Mono, but that font is stupid since it
+    " lacks bold.
+    set guifont=Ubuntu\ Mono\ 13,DejaVu\ Sans\ Mono\ 10
 elseif has("gui_macvim")
-    " If on MacVim, you're on a Mac. Newer versions of OS X
-    " include Menlo font. It looks like DejaVu Sans Mono,
-    " actually. However, I still prefer Monaco.
-    set guifont=Monaco:h12
+    " OS X: Sorry, Monaco. Menlo has finally got me. It's already the
+    " default font, but I need to slightly pump up the default size.
+    set guifont=Menlo\ Regular:h14
 endif
 
-" If using GVim, switch to Solarized Dark.
-if has("gui_gtk2") || has("gui_macvim")
-    set background=dark
-    colorscheme solarized
+" OS X only: MacVim supports transparency. (gVim doesn't).
+if has("gui_macvim")
+    set transparency=15
 endif
