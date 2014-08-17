@@ -35,8 +35,9 @@
 " 1. Generic settings
 " 2. Vundle plugins
 " 3. File settings
-" 4. Colors and UI
-" 5. Maps and functions
+" 4. Specific filetype settings
+" 5. Colors and UI
+" 6. Maps and functions
 
 " ===================
 " 1. GENERIC SETTINGS
@@ -96,8 +97,18 @@ set softtabstop=4           " remove a full pseudo-TAB when i press <BS>
 set encoding=utf-8          " always use unicode (god damnit, windows)
 set backspace=indent,eol,start " backspace always works on insert mode
 
+" =============================
+" 4. SPECIFIC FILETYPE SETTINGS
+" =============================
+" WARNING: As soon as this section grows over one vertical screen, all
+" the content here should be moved to ftplugin folder. I'm serious.
+
+" HTML, CSS/SASS, JS and CoffeScript gets 2 space indenting.
+autocmd FileType html,css,sass,scss,javascript,json,*.coffee
+            \ setlocal shiftwidth=2 softtabstop=2
+
 " ================
-" 4. COLORS AND UI
+" 5. COLORS AND UI
 " ================
 " Are we supporting colors?
 if &t_Co > 2 || has("gui_running")
@@ -125,7 +136,7 @@ set showmatch           " higlight matching parentheses and brackets
 set linespace=1         " slight linespacing
 
 " =====================
-" 5. MAPS AND FUNCTIONS
+" 6. MAPS AND FUNCTIONS
 " =====================
 let mapleader=","       " I GOTCHA, MAPLEADER ಠ_ಠ
 
