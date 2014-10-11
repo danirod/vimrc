@@ -67,6 +67,7 @@ Plugin 'zoom.vim' " Zoom plugin
 Plugin 'wlangstroth/vim-racket'                 " Racket
 Plugin 'jQuery'                                 " jQuery
 Plugin 'kchmck/vim-coffee-script'               " CoffeeScript
+Plugin 'tfnico/vim-gradle'                      " Gradle
 
 " Colorschemes
 Plugin 'endel/vim-github-colorscheme'           " GitHub
