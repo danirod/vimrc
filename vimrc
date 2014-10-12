@@ -132,6 +132,7 @@ set wildmenu            " enable visual wildmenu
 
 set nowrap              " don't wrap long lines
 set number              " show line numbers
+set relativenumber      " show numbers as relative by default
 set cursorline          " highlight line where the cursor is
 set showmatch           " higlight matching parentheses and brackets
 
@@ -157,3 +158,22 @@ map <C-S-TAB> :tabp<CR>
 " since I don't have to hold Shift whenever I want to display NERDTree.
 command NT NERDTree     " Legacy. Classy. I didn't know the power of maps yet.
 nmap <Leader>nt :NERDTreeToggle<cr>
+
+" Now, in order to easily swap between relative numbers and non-relative
+" numbers, let's declare a function that does the job for us: it sets
+" relativenumbers if it's OFF, it unsets it if it's ON.
+function! ToggleRelativeNumber()
+    if &relativenumber == 1
+        set norelativenumber
+        set number
+    else
+        set relativenumber
+    endif
+endfunction
+
+" Finally, to make toggling easier, I just have to map an unused key, such
+" as F5. This mapping will work both in Normal and in Insert mode. By
+" pressing this key, relative numbers are automatically toggled.
+nmap <F5> :call ToggleRelativeNumber()<CR>
+imap <F5> <Esc>:call ToggleRelativeNumber()<CR>a
+
