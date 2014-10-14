@@ -25,12 +25,5 @@ elseif has("gui_gtk2")
     " lacks bold.
     set guifont=Ubuntu\ Mono\ 13,DejaVu\ Sans\ Mono\ 10
 elseif has("gui_macvim")
-    " OS X: Sorry, Monaco. Menlo has finally got me. It's already the
-    " default font, but I need to slightly pump up the default size.
-    set guifont=Menlo\ Regular:h14
-endif
-
-" OS X only: MacVim supports transparency. (gVim doesn't).
-if has("gui_macvim")
-    set transparency=15
+    set guifont=Inconsolata:h13
 endif

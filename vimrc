@@ -124,7 +124,7 @@ endif
 
 " Are we supporting a full color pallete?
 if &t_Co >= 256 || has("gui_running")
-    colorscheme wombat  " trends change, you know ^_^
+    colorscheme monokai  " trends change, you know ^_^
 endif
 
 set showmode            " always show which more are we in
