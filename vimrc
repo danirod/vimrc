@@ -43,7 +43,6 @@
 " 1. GENERIC SETTINGS
 " ===================
 set nocompatible " disable vi compatibility mode
-set hidden " hide buffers instead of closing them
 set history=1000 " increase history size
 
 " =================
@@ -58,12 +57,13 @@ call vundle#begin()
 Plugin 'gmarik/vundle.vim'
 
 " Plug-ins
-Plugin 'scrooloose/nerdtree' " A tree explorer plugin for vim.
-Plugin 'tpope/vim-fugitive' " a Git wrapper so awesome it should be illegal.
-Plugin 'parkr/vim-jekyll' " Jekyll support
-Plugin 'zoom.vim' " Zoom plugin
+Plugin 'scrooloose/nerdtree'                    " NERDtree
+Plugin 'tpope/vim-fugitive'                     " Fugitive
+Plugin 'Valloric/YouCompleteMe'                 " YouCompleteMe
+Plugin 'majutsushi/tagbar'                      " Tagbar
 
 " Language support
+Plugin 'parkr/vim-jekyll'                       " Jekyll
 Plugin 'wlangstroth/vim-racket'                 " Racket
 Plugin 'jQuery'                                 " jQuery
 Plugin 'kchmck/vim-coffee-script'               " CoffeeScript
@@ -75,6 +75,7 @@ Plugin 'altercation/vim-colors-solarized'       " Solarized
 Plugin 'sickill/vim-monokai'                    " Monokai
 Plugin 'benjaminwhite/Benokai'                  " Benokai
 Plugin 'cschlueter/vim-wombat'                  " Wombat
+Plugin 'chriskempson/vim-tomorrow-theme'        " Tomorrow
 
 " Finish Vundle initialization
 call vundle#end()
@@ -84,10 +85,10 @@ filetype plugin indent on " Restore filetype
 " 3. FILE SETTINGS
 " ================
 
-" As stated by thousands of people... we aren't in the 70s anymore.
-" If you need to track the changes you do to your files, use Git.
-set noswapfile              " disable swap
-set nobackup                " disable backup
+" 70s are over and swap files are part of the past.
+" If you need to backup something, use Git, for God's sake.
+set noswapfile
+set nobackup
 
 " Modify indenting settings
 set autoindent              " autoindent always ON. 
@@ -115,28 +116,25 @@ autocmd FileType html,css,sass,scss,javascript,json,*.coffee
 " Are we supporting colors?
 if &t_Co > 2 || has("gui_running")
    syntax on
-
-   " Show legcy color column at 80 characters.
-   " TODO: Push the color column at 120 characters when Java is detected.
-   "       (and maybe do the same with other languages such as C#?)
    set colorcolumn=80
 endif
 
 " Are we supporting a full color pallete?
 if &t_Co >= 256 || has("gui_running")
-    colorscheme monokai  " trends change, you know ^_^
+    color solarized
+    set background=dark
 endif
 
 set showmode            " always show which more are we in
+set laststatus=2        " always show statusbar
 set wildmenu            " enable visual wildmenu
 
 set nowrap              " don't wrap long lines
 set number              " show line numbers
 set relativenumber      " show numbers as relative by default
 set cursorline          " highlight line where the cursor is
+set cursorcolumn        " highlight column where the cursor is
 set showmatch           " higlight matching parentheses and brackets
-
-set linespace=1         " slight linespacing
 
 " =====================
 " 6. MAPS AND FUNCTIONS
@@ -158,6 +156,9 @@ map <C-S-TAB> :tabp<CR>
 " since I don't have to hold Shift whenever I want to display NERDTree.
 command NT NERDTree     " Legacy. Classy. I didn't know the power of maps yet.
 nmap <Leader>nt :NERDTreeToggle<cr>
+nmap <F8> :TagbarToggle<CR> 
+:let g:NERDTreeWinSize=20
+:let g:tagbar_width=20
 
 " Now, in order to easily swap between relative numbers and non-relative
 " numbers, let's declare a function that does the job for us: it sets
@@ -177,3 +178,4 @@ endfunction
 nmap <F5> :call ToggleRelativeNumber()<CR>
 imap <F5> <Esc>:call ToggleRelativeNumber()<CR>a
 
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
