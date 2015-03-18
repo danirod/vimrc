@@ -1,3 +1,4 @@
 *.swp # ahh, the ironies...
 
 bundle/
+.ycm_extra_conf.pyc
