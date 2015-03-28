@@ -50,7 +50,7 @@ set history=1000 " increase history size
 " =================
 " Init Vundle
 filetype off " required by Vundle.
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/vundle.vim
 call vundle#begin()
 
 " Vundleception. Vundle actually needs to manage Vundle.
