@@ -60,8 +60,8 @@ Plugin 'gmarik/vundle.vim'
 Plugin 'scrooloose/nerdtree'                    " NERDtree
 Plugin 'tpope/vim-fugitive'                     " Fugitive
 Plugin 'majutsushi/tagbar'                      " Tagbar
-Plugin 'scrooloose/syntastic'                   " Syntastic
-Plugin 'Shougo/neocomplete.vim'                 " Neocomplete
+Plugin 'Valloric/YouCompleteMe'                 " YouCompleteMe
+Plugin 'rdnetto/YCM-Generator'                  " YCM-Generator
 
 " Language support
 Plugin 'parkr/vim-jekyll'                       " Jekyll
@@ -69,7 +69,6 @@ Plugin 'wlangstroth/vim-racket'                 " Racket
 Plugin 'jQuery'                                 " jQuery
 Plugin 'kchmck/vim-coffee-script'               " CoffeeScript
 Plugin 'tfnico/vim-gradle'                      " Gradle
-Plugin 'OmniCppComplete'                        " OmniCppComplete (C/C++)
 
 " Colorschemes
 Plugin 'endel/vim-github-colorscheme'           " GitHub
@@ -179,13 +178,3 @@ endfunction
 " pressing this key, relative numbers are automatically toggled.
 nmap <F5> :call ToggleRelativeNumber()<CR>
 imap <F5> <Esc>:call ToggleRelativeNumber()<CR>a
-
-" Syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
