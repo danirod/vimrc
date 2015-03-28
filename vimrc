@@ -61,6 +61,7 @@ Plugin 'scrooloose/nerdtree'                    " NERDtree
 Plugin 'tpope/vim-fugitive'                     " Fugitive
 Plugin 'majutsushi/tagbar'                      " Tagbar
 Plugin 'scrooloose/syntastic'                   " Syntastic
+Plugin 'Shougo/neocomplete.vim'                 " Neocomplete
 
 " Language support
 Plugin 'parkr/vim-jekyll'                       " Jekyll
@@ -68,6 +69,7 @@ Plugin 'wlangstroth/vim-racket'                 " Racket
 Plugin 'jQuery'                                 " jQuery
 Plugin 'kchmck/vim-coffee-script'               " CoffeeScript
 Plugin 'tfnico/vim-gradle'                      " Gradle
+Plugin 'OmniCppComplete'                        " OmniCppComplete (C/C++)
 
 " Colorschemes
 Plugin 'endel/vim-github-colorscheme'           " GitHub
