@@ -3,7 +3,7 @@
 " Author and maintainer: Dani Rodríguez <danirod@outlook.com>
 " Get info and fork at: http://github.com/danirod/vimrc
 "                       http://bitbucket.org/danirod/vimrc (mirror)
-" 
+"
 " LICENSE:
 " You are free to read and study this bundle or snippets of it and to use
 " it on your own vimrc settings. Feel free to tweak and adapt my vimrc to
@@ -26,6 +26,5 @@ elseif has("gui_gtk2")
     set guifont=Ubuntu\ Mono\ 13,DejaVu\ Sans\ Mono\ 10
 elseif has("gui_macvim")
     set linespace=1
-    set ruler
-    set guifont=Inconsolata:h13
+    set guifont=Menlo:h16
 endif
