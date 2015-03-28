@@ -59,7 +59,6 @@ Plugin 'gmarik/vundle.vim'
 " Plug-ins
 Plugin 'scrooloose/nerdtree'                    " NERDtree
 Plugin 'tpope/vim-fugitive'                     " Fugitive
-Plugin 'Valloric/YouCompleteMe'                 " YouCompleteMe
 Plugin 'majutsushi/tagbar'                      " Tagbar
 
 " Language support
