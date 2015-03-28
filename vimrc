@@ -60,6 +60,7 @@ Plugin 'gmarik/vundle.vim'
 Plugin 'scrooloose/nerdtree'                    " NERDtree
 Plugin 'tpope/vim-fugitive'                     " Fugitive
 Plugin 'majutsushi/tagbar'                      " Tagbar
+Plugin 'scrooloose/syntastic'                   " Syntastic
 
 " Language support
 Plugin 'parkr/vim-jekyll'                       " Jekyll
@@ -177,4 +178,12 @@ endfunction
 nmap <F5> :call ToggleRelativeNumber()<CR>
 imap <F5> <Esc>:call ToggleRelativeNumber()<CR>a
 
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+" Syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
