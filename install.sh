@@ -12,6 +12,7 @@ ln -s $PWD/vimrc ~/.vimrc
 ln -s $PWD/gvimrc ~/.gvimrc
 
 colormsg 2 "Fetching vundles..."
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
 colormsg 2 "Enjoy."
