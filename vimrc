@@ -50,11 +50,11 @@ set history=1000 " increase history size
 " =================
 " Init Vundle
 filetype off " required by Vundle.
-set rtp+=~/.vim/bundle/vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Vundleception. Vundle actually needs to manage Vundle.
-Plugin 'gmarik/vundle.vim'
+Plugin 'gmarik/Vundle.vim'
 
 " Plug-ins
 Plugin 'scrooloose/nerdtree'                    " NERDtree
