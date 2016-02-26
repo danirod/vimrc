@@ -64,19 +64,12 @@ Plugin 'Valloric/YouCompleteMe'                 " YouCompleteMe
 Plugin 'rdnetto/YCM-Generator'                  " YCM-Generator
 
 " Language support
-Plugin 'parkr/vim-jekyll'                       " Jekyll
 Plugin 'wlangstroth/vim-racket'                 " Racket
 Plugin 'jQuery'                                 " jQuery
-Plugin 'kchmck/vim-coffee-script'               " CoffeeScript
 Plugin 'tfnico/vim-gradle'                      " Gradle
 
 " Colorschemes
-Plugin 'endel/vim-github-colorscheme'           " GitHub
-Plugin 'altercation/vim-colors-solarized'       " Solarized
-Plugin 'sickill/vim-monokai'                    " Monokai
-Plugin 'benjaminwhite/Benokai'                  " Benokai
-Plugin 'cschlueter/vim-wombat'                  " Wombat
-Plugin 'chriskempson/vim-tomorrow-theme'        " Tomorrow
+Plugin 'brendonrapp/smyck-vim'                  " Smyck
 
 " Finish Vundle initialization
 call vundle#end()
@@ -122,8 +115,7 @@ endif
 
 " Are we supporting a full color pallete?
 if &t_Co >= 256 || has("gui_running")
-    color solarized
-    set background=dark
+    color smyck
 endif
 
 set showmode            " always show which more are we in
