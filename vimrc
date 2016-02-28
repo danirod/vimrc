@@ -61,7 +61,6 @@ Plugin 'scrooloose/nerdtree'                    " NERDtree
 Plugin 'tpope/vim-fugitive'                     " Fugitive
 Plugin 'majutsushi/tagbar'                      " Tagbar
 Plugin 'Valloric/YouCompleteMe'                 " YouCompleteMe
-Plugin 'rdnetto/YCM-Generator'                  " YCM-Generator
 
 " Language support
 Plugin 'wlangstroth/vim-racket'                 " Racket
