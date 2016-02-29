@@ -26,5 +26,5 @@ elseif has("gui_gtk2")
     set guifont=Ubuntu\ Mono\ 13,DejaVu\ Sans\ Mono\ 10
 elseif has("gui_macvim")
     set linespace=1
-    set guifont=Menlo:h16
+    set guifont=Menlo:h13
 endif
