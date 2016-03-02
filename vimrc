@@ -1,35 +1,12 @@
 " danirod's vimrc settings
 " Author and maintainer: Dani Rodríguez <danirod@outlook.com>
-" Get info and fork at: http://github.com/danirod/vimrc
-"                       http://bitbucket.org/danirod/vimrc (mirror)
+" Public backup: http://github.com/danirod/vimrc
 "
 " LICENSE:
 " You are free to read and study this bundle or snippets of it and to use
 " it on your own vimrc settings. Feel free to tweak and adapt my vimrc to
 " suit your needs and to make the changes yours. Attribution to this vimrc
 " is not required although is thanked.
-"
-" CHANGELOG:
-" Only information about major and minor releases is provided. To checkout
-" full version history including patches and bugfixes please see the complete
-" release history at http://github.com/danirod/vimrc/releases.
-"
-" v1.2      2014-04-13
-"           * Switch to Vundle for plugin management.
-"           * Remove Git submodules and replace by Vundle Plugins.
-"           * Lotsa plugins and colors (Solarized, Fugitive, NERDTree...)
-"
-" v1.1      2014-02-10
-"           * Install Vundle for a fast and simple plugin management.
-"           * Even more compatibility for using this vimrc on GVim.
-"           * Add a colorscheme and set the default colorscheme.
-"
-" v1.0      2014-01-20
-"           * Initial release as a brand new separate repository.
-"           * Moar settings on a well documented file.
-"
-" v0.1      2013-08-26 (@ http://github.com/danirod/dotfiles - commit b3f77a6)
-"           * Initial release to public as a file in my dotfile repository.
 
 " TABLE OF CONTENTS:
 " 1. Generic settings
