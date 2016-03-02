@@ -12,18 +12,16 @@
 " Disable toolbar
 set guioptions-=T
 
+" Was this recently added to GVim? I thought it only worked on MacVim.
+set linespace=1
+
 " Set font. It depends on which operating system I'm using.
 if has("win32") || has("win64")
-    " Windows: Hands down for Consolas. It's a nice looking font and it
-    " supports Unicode, which Fixedsys (default gVim font) doesn't.
     set guifont=Consolas:h11
+    set lines=30
+    set columns=120
 elseif has("gui_gtk2")
-    " Linux: Ubuntu Mono looks nice. Fallback to DejaVu Sans Mono in
-    " case the system doesn't have it installed. Some mainstream distros
-    " now ship with Droid Sans Mono, but that font is stupid since it
-    " lacks bold.
     set guifont=Ubuntu\ Mono\ 13,DejaVu\ Sans\ Mono\ 10
 elseif has("gui_macvim")
-    set linespace=1
     set guifont=Menlo:h13
 endif

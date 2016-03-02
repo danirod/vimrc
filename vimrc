@@ -27,8 +27,13 @@ set history=1000 " increase history size
 " =================
 " Init Vundle
 filetype off " required by Vundle.
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+if has("win32") || has("win64")
+    set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
+    call vundle#begin('$USERPROFILE/vimfiles/bundle/')
+else
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+end
 
 " Vundleception. Vundle actually needs to manage Vundle.
 Plugin 'gmarik/Vundle.vim'
