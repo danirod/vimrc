@@ -1,8 +1,7 @@
 " danirod's gvimrc settings
 " Specific settings for graphical clients such as gVim or MacVim
 " Author and maintainer: Dani Rodríguez <danirod@outlook.com>
-" Get info and fork at: http://github.com/danirod/vimrc
-"                       http://bitbucket.org/danirod/vimrc (mirror)
+" Public backup: http://github.com/danirod/vimrc
 "
 " LICENSE:
 " You are free to read and study this bundle or snippets of it and to use
