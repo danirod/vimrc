@@ -19,38 +19,52 @@ I'm proud of it.
 
 ### Requirements
 
-* **Linux / MacOS X**: installation is done as a shell script.
-  I've tested my setup on Linux and on MacOS X and it works out of
-  the box. It should work on **Windows** too if you get Bash for
-  Windows first; although I haven't tested it. There's **NO**
-  support for sucky Windows Command Prompt and it won't ever have.
-* **vim 7.3 +**: it's my version, I've tested my setup against this
-  version. I don't know if it'll work on older versions of vim.
-  Vundle was also tested on vim 7.3.
-* **Git**: required for cloning Vundle's submodule. Tested on Git 1.7.9.
-* **Curl**: required by Vundle for cloning plugins.
-
-Optionally you can also have **gvim** (vim-gtk) or **MacVim** if you want.
+* **Linux, MacOS X or Windows**: On Linux and MacOS X it works out of the
+  box. Windows support is experimental but it works as well. See below
+  for Windows specific information.
+* **ViM 7.3 / 7.4**: My setup is known to work under ViM 7.3. However, to
+  make use of YouCompleteMe, ViM 7.4 is required as a requirement. If you
+  cannot upgrade to ViM 7.4 yet, please disable YCM.
+* **Git and Curl**: they are required to clone Vundle.vim and for installing
+  plugins through PluginInstall.
 
 ### Install
 
-You can grab a [zipball](http://github.com/danirod/vimrc/archive/master.zip)
-or a [tarball](http://github.com/danirod/vimrc/archive/master.tar.gz) if you
-don't want to use Git; but I encourage you to use Git since it will allow
-you to update the setup easier. If you don't use Git, you'll have to
-manually download Vundle too.
-
-To install this setup using Git just clone the repo into ~/.vim, then run
-the installation script.
-
+Clone this repository on `~/.vim`, then run the install script.
 
     git clone git://github.com/danirod/vimrc ~/.vim
     cd ~/.vim
     sh install.sh
 
-Install script will automatically clone vundle, symlink vimrc to ~/.vimrc
-and gvimrc to ~/.gvimrc and install all my plugins into Vundle. You can do
-that manually if you want.
+Please note that at the moment YouCompleteMe has extra dependencies that
+have to be compiled manually. See
+[YCM's README](https://github.com/Valloric/YouCompleteMe/blob/master/README.md)
+for more information. You can disable YCM Plugin as well if you don't plan
+on using it. I'm considering disabling it by default since, unless I'm on
+my main development machine, I don't use it and it takes a while to get it
+working.
+
+### Windows Install
+
+I finally gave ViM for Windows a try and now it works on Windows too. ViM
+for Windows uses a different path for vimrc given Windows limitations:
+`~/.vim` becomes `~/vimfiles`; `~/.vimrc` becomes `~/_vimrc` and 
+`~/.gvimrc` becomes `~/_gvimrc`.
+
+Install Git and Curl. They must be loaded in your PATH because Vundle needs
+them to install the plugins. Then, execute the following commands for
+cloning and installing Vim and Vundle.
+
+    > git clone git://github.com/danirod/vimrc %USERPROFILE%/vimfiles
+    > cd %USERPROFILE%/vimfiles
+    > git submodule update --init
+
+If ViM is on your PATH, you can install plugins automatically using:
+
+    > vim +PluginInstall +qall
+
+Otherwise, open ViM and manually execute `:PluginInstall` command to
+install plugins and colorschemes.
 
 ## Plugins
 
@@ -59,26 +73,6 @@ Vundle is an awesome plugin manager for Vim that takes care of automatically
 installing plugins, so you don't haveto care about them. You just add them
 to your vimrc file and Vundle can clone them.
 
-I used to use Pathogen. It's also a nice solution; however it requires you
-to manage manually your plugins, for instance, by submoduling all of them,
-which is sometimes hard. If you want to use Pathogen, you can checkout
-__pathogen__ branch. It may be outdated, though.
-
-Some plugins I use:
-
-* [vim-colors-solarized](http://github.com/altercation/vim-colors-solarized):
-  solarized colorscheme. Really nice, uses 256 colors, looks nice on GVim
-  and on Vim if your terminal supports 256 colors. It has two color schemes:
-  dark and light.
-* [vim-github-colorscheme](http://github.com/endel/vim-github-colorscheme):
-  colorscheme that uses GitHub's syntax highlighting colorscheme.
-* [scrooloose/nerdtree](http://github.com/scrooloose/nerdtree): tree viewer
-  for Vim. You can open it by using a command and it helps you navigate
-  through all your files.
-* [wlangstroth/vim-racket](http://github.com/wlangstroth/vim-racket): add
-  Racket support for Vim (syntax highlighting, .rkt extension, indenting...)
-* [tpope/vim-fugitive](http://github.com/tpope/vim-fugitive): Git inside Vim.
-  Simply awesome.
-
-Please note that this list may be outdated. Refer to my vimrc file in
-case you want to see the actual plugin list bundled in my setup.
+Check out vimrc to get the plugins. I used to keep a list with the plugins
+and a brief description about them, but since the list was almost always
+outdated, it is not useful anymore.
