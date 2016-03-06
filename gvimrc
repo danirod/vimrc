@@ -15,11 +15,13 @@ set guioptions-=T
 " Was this recently added to GVim? I thought it only worked on MacVim.
 set linespace=1
 
+" Window dimensions
+set lines=35
+set columns=120
+
 " Set font. It depends on which operating system I'm using.
 if has("win32") || has("win64")
     set guifont=Consolas:h11
-    set lines=30
-    set columns=120
 elseif has("gui_gtk2")
     set guifont=Ubuntu\ Mono\ 13,DejaVu\ Sans\ Mono\ 10
 elseif has("gui_macvim")
