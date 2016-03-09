@@ -49,6 +49,10 @@ Plugin 'wlangstroth/vim-racket'                 " Racket
 Plugin 'jQuery'                                 " jQuery
 Plugin 'tfnico/vim-gradle'                      " Gradle
 
+if has("win32") || has("win64")
+    Plugin 'PProvost/vim-ps1'                   " PowerShell
+end
+
 " Colorschemes
 Plugin 'brendonrapp/smyck-vim'                  " Smyck
 
