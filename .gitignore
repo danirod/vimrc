@@ -1,3 +1,6 @@
-*.swp # ahh, the ironies...
+# vim-plug is managed by the install script
+autoload/plug.vim
 
-bundle/
+# This is where vim-plug stores stuff
+plugged/
+

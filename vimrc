@@ -10,7 +10,7 @@
 
 " TABLE OF CONTENTS:
 " 1. Generic settings
-" 2. Vundle plugins
+" 2. Vim-Plug plugins
 " 3. File settings
 " 4. Specific filetype settings
 " 5. Colors and UI
@@ -23,42 +23,33 @@ set nocompatible " disable vi compatibility mode
 set history=1000 " increase history size
 
 " =================
-" 2. VUNDLE PLUGINS
+" 2. VIM-PLUG PLUGINS
 " =================
-" Init Vundle
-filetype off " required by Vundle.
+" Init vim-plug
 if has("win32") || has("win64")
-    set rtp+=$HOME/vimfiles/bundle/Vundle.vim/
-    call vundle#begin('$USERPROFILE/vimfiles/bundle/')
+    call plug#begin('$USERPROFILE/vimfiles/plugged/')
 else
-    set rtp+=~/.vim/bundle/Vundle.vim
-    call vundle#begin()
+    call plug#begin('~/.vim/plugged/')
 end
 
-" Vundleception. Vundle actually needs to manage Vundle.
-Plugin 'gmarik/Vundle.vim'
-
 " Plug-ins
-Plugin 'scrooloose/nerdtree'                    " NERDtree
-Plugin 'tpope/vim-fugitive'                     " Fugitive
-Plugin 'majutsushi/tagbar'                      " Tagbar
-Plugin 'Valloric/YouCompleteMe'                 " YouCompleteMe
+Plug 'scrooloose/nerdtree'                    " NERDtree
+Plug 'tpope/vim-fugitive'                     " Fugitive
+Plug 'majutsushi/tagbar'                      " Tagbar
 
 " Language support
-Plugin 'wlangstroth/vim-racket'                 " Racket
-Plugin 'jQuery'                                 " jQuery
-Plugin 'tfnico/vim-gradle'                      " Gradle
+Plug 'wlangstroth/vim-racket'                 " Racket
+Plug 'jQuery'                                 " jQuery
+Plug 'tfnico/vim-gradle'                      " Gradle
 
 if has("win32") || has("win64")
-    Plugin 'PProvost/vim-ps1'                   " PowerShell
+    Plug 'PProvost/vim-ps1'                   " PowerShell
 end
 
 " Colorschemes
-Plugin 'brendonrapp/smyck-vim'                  " Smyck
+Plug 'brendonrapp/smyck-vim'                  " Smyck
 
-" Finish Vundle initialization
-call vundle#end()
-filetype plugin indent on " Restore filetype
+call plug#end()
 
 " ================
 " 3. FILE SETTINGS

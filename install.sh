@@ -1,17 +1,18 @@
 #!/bin/sh
 # vimrc install script
 
-# pring a color message.
-colormsg() { tput setaf $1; echo $2; tput sgr0; }
+# Backup old setup
+[ -f ~/.vimrc ] && mv -f ~/.vimrc ~/.vimrc.bak
+[ -f ~/.gvimrc ] && mv -f ~/.gvimrc ~/.gvimrc.bak
 
-colormsg 2 "Geting vundle..."
-git submodule update --init
+# Clone and install configuration
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-colormsg 2 "Symlinking vim..."
-ln -s $PWD/vimrc ~/.vimrc
-ln -s $PWD/gvimrc ~/.gvimrc
+# Setting up symlinks.
+ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/gvimrc ~/.gvimrc
 
-colormsg 2 "Fetching vundles..."
-vim +PluginInstall +qall
+# Install configuration
+vim +PlugInstall +qall
 
-colormsg 2 "Enjoy."
