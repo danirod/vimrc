@@ -22,57 +22,61 @@ I'm proud of it.
 * **Linux, MacOS X or Windows**: On Linux and MacOS X it works out of the
   box. Windows support is experimental but it works as well. See below
   for Windows specific information.
-* **ViM 7.3 / 7.4**: My setup is known to work under ViM 7.3. However, to
-  make use of YouCompleteMe, ViM 7.4 is required as a requirement. If you
-  cannot upgrade to ViM 7.4 yet, please disable YCM.
-* **Git and Curl**: they are required to clone Vundle.vim and for installing
-  plugins through PluginInstall.
+* **ViM 7.3**: My setup should work on Vim 7.3 since every plugin I use
+  works on that version. I don't use YCM anymore since I have replaced it.
+* **Git and Curl**: they are required by vim-plug for installing plugins.
 
-### Install
+### Quick set up
 
-Clone this repository on `~/.vim`, then run the install script.
+On Linux and MacOS you can run the following one liner:
 
-    git clone git://github.com/danirod/vimrc ~/.vim
-    cd ~/.vim
-    sh install.sh
+```sh
+curl -fL https://raw.githubusercontent.com/danirod/vimrc/master/install.sh | sh
+```
 
-Please note that at the moment YouCompleteMe has extra dependencies that
-have to be compiled manually. See
-[YCM's README](https://github.com/Valloric/YouCompleteMe/blob/master/README.md)
-for more information. You can disable YCM Plugin as well if you don't plan
-on using it. I'm considering disabling it by default since, unless I'm on
-my main development machine, I don't use it and it takes a while to get it
-working.
+On Windows PowerShell you can run the following three liner:
 
-### Windows Install
+```powershell
+iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/danirod/vimrc/install-script/instal.ps1'))
+```
 
-I finally gave ViM for Windows a try and now it works on Windows too. ViM
-for Windows uses a different path for vimrc given Windows limitations:
-`~/.vim` becomes `~/vimfiles`; `~/.vimrc` becomes `~/_vimrc` and 
-`~/.gvimrc` becomes `~/_gvimrc`.
+Should you trust these scripts? It is up to you. I somehow got to trust my
+own scripts. If you just want to download and play with the setup and are
+concerned about the security issues, please read the source code for
+`install.sh` or `install.ps1` by yourself before running the commands or
+run the install process manually.
 
-Install Git and Curl. They must be loaded in your PATH because Vundle needs
-them to install the plugins. Then, execute the following commands for
-cloning and installing Vim and Vundle.
+### Manual set up
 
-    > git clone git://github.com/danirod/vimrc %USERPROFILE%/vimfiles
-    > cd %USERPROFILE%/vimfiles
-    > git submodule update --init
-
-If ViM is on your PATH, you can install plugins automatically using:
-
-    > vim +PluginInstall +qall
-
-Otherwise, open ViM and manually execute `:PluginInstall` command to
-install plugins and colorschemes.
+Download or clone the project and put it on `~/.vim` on Linux and Mac or on
+`~\vimfiles` on Windows. To install the plugins, you will need to install
+`vim-plug`. Instructions are present on [his README][vim-plug-readme].
+To install the plugins, run `vim +PlugInstall +qall` after installing
+vim-plug.
 
 ## Plugins
 
-My vimrc setup is powered by [Vundle](http://github.com/gmarik/Vundle.vim).
-Vundle is an awesome plugin manager for Vim that takes care of automatically
-installing plugins, so you don't haveto care about them. You just add them
-to your vimrc file and Vundle can clone them.
+My vimrc is powered at the moment by [vim-plug][vim-plug]. It is a nice
+alternative to Vundle that I have found to be more simple yet powerful than
+Vundle.
 
-Check out vimrc to get the plugins. I used to keep a list with the plugins
-and a brief description about them, but since the list was almost always
-outdated, it is not useful anymore.
+To see which plugins do I use, read the `vimrc` file. I used to describe here
+my plugin setup, but since this list was almost always outdated, I don't do
+it anymore.
+
+## Disclaimer
+
+This is MY vimrc setup and it is opinionated and made to work how I want.
+Anyone can download and use my vimrc, but unless you and me are the same
+person, you'll probably find things that you don't want. It is OK. Use this
+vimrc as a starting point for making your own.
+
+**Under no circumstances I am responsible for any kind of damage derived from
+the use of this vimrc on your machine. If you lose files, if your Vim install
+breaks, if something explodes. My vimrc comes with no warranties. Again;
+you shouldn't play with my toys if you don't want to get hurt.** (This doesn't
+mean my vimrc will hurt you, you know, but this is legal boilerplate to cover
+my ass _in case_ something happens).
+
+[vim-plug-readme]: https://github.com/junegunn/vim-plug#installation
+[vim-plug]: https://github.com/junegunn/vim-plug
