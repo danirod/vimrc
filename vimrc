@@ -48,6 +48,7 @@ end
 
 " Colorschemes
 Plug 'brendonrapp/smyck-vim'                  " Smyck
+Plug 'altercation/vim-colors-solarized'       " Solarized
 
 call plug#end()
 
@@ -92,7 +93,8 @@ endif
 " Are we supporting a full color pallete?
 if &t_Co >= 256 || has("gui_running")
     try
-        color smyck
+        color solarized
+        set background=dark
     catch /^Vim\%((\a\+)\)\=:E185/
     endtry
 endif
