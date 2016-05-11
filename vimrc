@@ -99,6 +99,9 @@ if &t_Co >= 256 || has("gui_running")
     endtry
 endif
 
+set fillchars+=vert:\   " Remove unpleasant pipes from vertical splits
+                        " Sauce on this: http://stackoverflow.com/a/9001540 
+
 set showmode            " always show which more are we in
 set laststatus=2        " always show statusbar
 set wildmenu            " enable visual wildmenu
