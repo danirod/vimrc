@@ -62,7 +62,7 @@ set noswapfile
 set nobackup
 
 " Modify indenting settings
-set autoindent              " autoindent always ON. 
+set autoindent              " autoindent always ON.
 set expandtab               " expand tabs
 set shiftwidth=4            " spaces for autoindenting
 set softtabstop=4           " remove a full pseudo-TAB when i press <BS>
@@ -144,7 +144,7 @@ map <C-S-TAB> :tabp<CR>
 " since I don't have to hold Shift whenever I want to display NERDTree.
 command NT NERDTree     " Legacy. Classy. I didn't know the power of maps yet.
 nmap <Leader>nt :NERDTreeToggle<cr>
-nmap <F8> :TagbarToggle<CR> 
+nmap <F8> :TagbarToggle<CR>
 :let g:NERDTreeWinSize=20
 :let g:tagbar_width=20
 
