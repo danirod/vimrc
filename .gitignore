@@ -1,3 +1,5 @@
+.netrwhist
+
 # vim-plug is managed by the install script
 autoload/plug.vim
 
