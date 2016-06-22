@@ -33,22 +33,24 @@ else
 end
 
 " Plug-ins
-Plug 'scrooloose/nerdtree'                    " NERDtree
-Plug 'tpope/vim-fugitive'                     " Fugitive
-Plug 'majutsushi/tagbar'                      " Tagbar
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
+Plug 'majutsushi/tagbar'
 
 " Language support
-Plug 'wlangstroth/vim-racket'                 " Racket
-Plug 'jQuery'                                 " jQuery
-Plug 'tfnico/vim-gradle'                      " Gradle
+Plug 'wlangstroth/vim-racket'
+Plug 'jQuery'
+Plug 'tfnico/vim-gradle'
+Plug 'tpope/vim-rails'
 
 if has("win32") || has("win64")
-    Plug 'PProvost/vim-ps1'                   " PowerShell
+    Plug 'PProvost/vim-ps1'
 end
 
 " Colorschemes
-Plug 'brendonrapp/smyck-vim'                  " Smyck
-Plug 'altercation/vim-colors-solarized'       " Solarized
+Plug 'brendonrapp/smyck-vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'chriskempson/vim-tomorrow-theme'
 
 call plug#end()
 
@@ -93,8 +95,7 @@ endif
 " Are we supporting a full color pallete?
 if &t_Co >= 256 || has("gui_running")
     try
-        color solarized
-        set background=dark
+        color Tomorrow-Night
     catch /^Vim\%((\a\+)\)\=:E185/
     endtry
 endif
