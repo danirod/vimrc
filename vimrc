@@ -36,6 +36,8 @@ end
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'majutsushi/tagbar'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ap/vim-buftabline'
 
 " Language support
 Plug 'wlangstroth/vim-racket'
@@ -140,6 +142,11 @@ map <C-l> <C-w>l
 " Better tabbing using <C-tab> (why didn't I think of this earlier?)
 map <C-TAB> :tabn<CR>
 map <C-S-TAB> :tabp<CR>
+
+" It's 2016 and I've learned how good are actually buffers.
+set hidden
+nnoremap <C-N> :bprev<CR>
+nnoremap <C-M> :bprev<CR>
 
 " NERDTree: map ,nt for toggling NERDTree. Faster than the old :NT command
 " since I don't have to hold Shift whenever I want to display NERDTree.
