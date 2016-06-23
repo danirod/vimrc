@@ -84,6 +84,7 @@ set backspace=indent,eol,start " backspace always works on insert mode
 " HTML, CSS/SASS, JS and CoffeScript gets 2 space indenting.
 autocmd FileType html,css,sass,scss,javascript,json,*.coffee
             \ setlocal shiftwidth=2 softtabstop=2
+autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2
 
 " ================
 " 5. COLORS AND UI
@@ -146,7 +147,7 @@ map <C-S-TAB> :tabp<CR>
 " It's 2016 and I've learned how good are actually buffers.
 set hidden
 nnoremap <C-N> :bprev<CR>
-nnoremap <C-M> :bprev<CR>
+nnoremap <C-M> :bnext<CR>
 
 " NERDTree: map ,nt for toggling NERDTree. Faster than the old :NT command
 " since I don't have to hold Shift whenever I want to display NERDTree.
