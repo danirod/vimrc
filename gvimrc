@@ -23,7 +23,7 @@ set columns=120
 if has("win32") || has("win64")
     set guifont=Consolas:h11
 elseif has("gui_gtk2")
-    set guifont=Ubuntu\ Mono\ 13,DejaVu\ Sans\ Mono\ 10
+    set guifont=GohuFont\ 10,Ubuntu\ Mono\ 13,DejaVu\ Sans\ Mono\ 10
 elseif has("gui_macvim")
     set guifont=Menlo:h13
 endif
