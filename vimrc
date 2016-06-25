@@ -1,8 +1,4 @@
-" danirod's vimrc settings
-" Author and maintainer: Dani Rodríguez <danirod@outlook.com>
-" Public backup: http://github.com/danirod/vimrc
-"
-" LICENSE:
+" danirod's vimrc settings " Author and maintainer: Dani Rodríguez <danirod@outlook.com> " Public backup: http://github.com/danirod/vimrc " " LICENSE:
 " You are free to read and study this bundle or snippets of it and to use
 " it on your own vimrc settings. Feel free to tweak and adapt my vimrc to
 " suit your needs and to make the changes yours. Attribution to this vimrc
@@ -35,6 +31,7 @@ end
 " Plug-ins
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ap/vim-buftabline'
@@ -44,6 +41,7 @@ Plug 'wlangstroth/vim-racket'
 Plug 'jQuery'
 Plug 'tfnico/vim-gradle'
 Plug 'tpope/vim-rails'
+Plug 'alvan/vim-closetag'
 
 if has("win32") || has("win64")
     Plug 'PProvost/vim-ps1'
@@ -84,7 +82,10 @@ set backspace=indent,eol,start " backspace always works on insert mode
 " HTML, CSS/SASS, JS and CoffeScript gets 2 space indenting.
 autocmd FileType html,css,sass,scss,javascript,json,*.coffee
             \ setlocal shiftwidth=2 softtabstop=2
-autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2
+
+" Ruby and ERB files
+autocmd FileType ruby,eruby setlocal shiftwidth=2 softtabstop=2
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.xml.erb,*.xml"
 
 " ================
 " 5. COLORS AND UI
@@ -98,7 +99,7 @@ endif
 " Are we supporting a full color pallete?
 if &t_Co >= 256 || has("gui_running")
     try
-        color Tomorrow-Night
+        color Tomorrow-Night-Bright
     catch /^Vim\%((\a\+)\)\=:E185/
     endtry
 endif
