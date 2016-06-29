@@ -41,6 +41,7 @@ Plug 'wlangstroth/vim-racket'
 Plug 'jQuery'
 Plug 'tfnico/vim-gradle'
 Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
 Plug 'alvan/vim-closetag'
 
 if has("win32") || has("win64")
@@ -51,6 +52,7 @@ end
 Plug 'brendonrapp/smyck-vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
@@ -99,7 +101,7 @@ endif
 " Are we supporting a full color pallete?
 if &t_Co >= 256 || has("gui_running")
     try
-        color Tomorrow-Night-Bright
+        color base16-ocean
     catch /^Vim\%((\a\+)\)\=:E185/
     endtry
 endif
