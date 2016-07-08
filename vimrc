@@ -29,7 +29,6 @@ else
 end
 
 " Plug-ins
-Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'majutsushi/tagbar'
@@ -151,14 +150,6 @@ map <C-S-TAB> :tabp<CR>
 set hidden
 nnoremap <C-N> :bprev<CR>
 nnoremap <C-M> :bnext<CR>
-
-" NERDTree: map ,nt for toggling NERDTree. Faster than the old :NT command
-" since I don't have to hold Shift whenever I want to display NERDTree.
-command NT NERDTree     " Legacy. Classy. I didn't know the power of maps yet.
-nmap <Leader>nt :NERDTreeToggle<cr>
-nmap <F8> :TagbarToggle<CR>
-:let g:NERDTreeWinSize=20
-:let g:tagbar_width=20
 
 " Now, in order to easily swap between relative numbers and non-relative
 " numbers, let's declare a function that does the job for us: it sets
