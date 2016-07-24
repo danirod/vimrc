@@ -1,4 +1,8 @@
-" danirod's vimrc settings " Author and maintainer: Dani Rodríguez <danirod@outlook.com> " Public backup: http://github.com/danirod/vimrc " " LICENSE:
+" danirod's vimrc settings
+" Author and maintainer: Dani Rodríguez <danirod@outlook.com>
+" Public backup: http://github.com/danirod/vimrc
+"
+" LICENSE:
 " You are free to read and study this bundle or snippets of it and to use
 " it on your own vimrc settings. Feel free to tweak and adapt my vimrc to
 " suit your needs and to make the changes yours. Attribution to this vimrc
@@ -50,8 +54,6 @@ end
 
 " Colorschemes
 Plug 'brendonrapp/smyck-vim'
-Plug 'altercation/vim-colors-solarized'
-Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'chriskempson/base16-vim'
 
 call plug#end()
@@ -101,7 +103,7 @@ endif
 " Are we supporting a full color pallete?
 if &t_Co >= 256 || has("gui_running")
     try
-        color base16-ocean
+        color base16-solarized-dark
     catch /^Vim\%((\a\+)\)\=:E185/
     endtry
 endif
@@ -136,6 +138,9 @@ set showmatch           " higlight matching parentheses and brackets
 " =====================
 let mapleader=","       " I GOTCHA, MAPLEADER ಠ_ಠ
 
+" Indent the entire file. Thanks for the suggestion, @ssmatiuri.
+map <Leader>f gg=G
+
 " Make window navigation less painful.
 " this one is taken from https://gist.github.com/JeffreyWay/6753834
 map <C-h> <C-w>h
@@ -143,22 +148,17 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" Better tabbing using <C-tab> (why didn't I think of this earlier?)
-map <C-TAB> :tabn<CR>
-map <C-S-TAB> :tabp<CR>
-
-" It's 2016 and I've learned how good are actually buffers.
+" It is 2016 and I finally did learn about buffers. Time to ditch away tabs.
 set hidden
-nnoremap <C-N> :bprev<CR>
-nnoremap <C-M> :bnext<CR>
+map <C-TAB>     :bnext<CR>
+map <C-S-TAB>   :bprev<CR>
+imap <C-TAB>    <Esc>:bnext<CR>a
+imap <C-S-TAB>  <Esc>:bprev<CR>a
 
 " NERDTree: map ,nt for toggling NERDTree. Faster than the old :NT command
 " since I don't have to hold Shift whenever I want to display NERDTree.
-command NT NERDTree     " Legacy. Classy. I didn't know the power of maps yet.
 nmap <Leader>nt :NERDTreeToggle<cr>
-nmap <F8> :TagbarToggle<CR>
 :let g:NERDTreeWinSize=20
-:let g:tagbar_width=20
 
 " Now, in order to easily swap between relative numbers and non-relative
 " numbers, let's declare a function that does the job for us: it sets
