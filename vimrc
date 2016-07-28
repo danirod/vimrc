@@ -160,20 +160,8 @@ imap <C-S-TAB>  <Esc>:bprev<CR>a
 nmap <Leader>nt :NERDTreeToggle<cr>
 :let g:NERDTreeWinSize=20
 
-" Now, in order to easily swap between relative numbers and non-relative
-" numbers, let's declare a function that does the job for us: it sets
-" relativenumbers if it's OFF, it unsets it if it's ON.
-function! ToggleRelativeNumber()
-    if &relativenumber == 1
-        set norelativenumber
-        set number
-    else
-        set relativenumber
-    endif
-endfunction
-
-" Finally, to make toggling easier, I just have to map an unused key, such
+" To make toggling easier, I just have to map an unused key, such
 " as F5. This mapping will work both in Normal and in Insert mode. By
 " pressing this key, relative numbers are automatically toggled.
-nmap <F5> :call ToggleRelativeNumber()<CR>
-imap <F5> <Esc>:call ToggleRelativeNumber()<CR>a
+nmap <F5> :set invrelativenumber<CR>
+imap <F5> <ESC>:set invrelativenumber<CR>a
