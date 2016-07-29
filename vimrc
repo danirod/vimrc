@@ -35,24 +35,17 @@ end
 " Plug-ins
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ap/vim-buftabline'
 
 " Language support
 Plug 'wlangstroth/vim-racket'
-Plug 'jQuery'
 Plug 'tfnico/vim-gradle'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'alvan/vim-closetag'
 
-if has("win32") || has("win64")
-    Plug 'PProvost/vim-ps1'
-end
-
 " Colorschemes
-Plug 'brendonrapp/smyck-vim'
 Plug 'chriskempson/base16-vim'
 
 call plug#end()
@@ -79,15 +72,13 @@ set backspace=indent,eol,start " backspace always works on insert mode
 " =============================
 " 4. SPECIFIC FILETYPE SETTINGS
 " =============================
-" WARNING: As soon as this section grows over one vertical screen, all
-" the content here should be moved to ftplugin folder. I'm serious.
 
-" HTML, CSS/SASS, JS and CoffeScript gets 2 space indenting.
-autocmd FileType html,css,sass,scss,javascript,json,*.coffee
-            \ setlocal shiftwidth=2 softtabstop=2
+" Some programming languages work better when only 2 spaces padding is used.
+autocmd FileType html,css,sass,scss,javascript setlocal sw=2 sts=2
+autocmd FileType json setlocal sw=2 sts=2
+autocmd FileType ruby,eruby setlocal sw=2 sts=2
+autocmd FileType yaml setlocal sw=2 sts=2
 
-" Ruby and ERB files
-autocmd FileType ruby,eruby setlocal shiftwidth=2 softtabstop=2
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.xml.erb,*.xml"
 
 " ================
@@ -129,8 +120,11 @@ set nowrap              " don't wrap long lines
 set number              " show line numbers
 set relativenumber      " show numbers as relative by default
 set cursorline          " highlight line where the cursor is
-set cursorcolumn        " highlight column where the cursor is
 set showmatch           " higlight matching parentheses and brackets
+
+if &t_Co >= 256 || has("gui_running")
+    set cursorcolumn    " cursor column is fine but only with enough colors
+endif
 
 " =====================
 " 6. MAPS AND FUNCTIONS
@@ -149,25 +143,12 @@ map <C-l> <C-w>l
 
 " It is 2016 and I finally did learn about buffers. Time to ditch away tabs.
 set hidden
-map <C-TAB>     :bnext<CR>
-map <C-S-TAB>   :bprev<CR>
-imap <C-TAB>    <Esc>:bnext<CR>a
-imap <C-S-TAB>  <Esc>:bprev<CR>a
+nnoremap <C-K> :bprev<CR>
+nnoremap <C-L> :bnext<CR>
+inoremap <C-K> <Esc>:bprev<CR>a
+inoremap <C-L> <Esc>:bnext<CR>a
 
-" Now, in order to easily swap between relative numbers and non-relative
-" numbers, let's declare a function that does the job for us: it sets
-" relativenumbers if it's OFF, it unsets it if it's ON.
-function! ToggleRelativeNumber()
-    if &relativenumber == 1
-        set norelativenumber
-        set number
-    else
-        set relativenumber
-    endif
-endfunction
-
-" Finally, to make toggling easier, I just have to map an unused key, such
-" as F5. This mapping will work both in Normal and in Insert mode. By
-" pressing this key, relative numbers are automatically toggled.
-nmap <F5> :call ToggleRelativeNumber()<CR>
-imap <F5> <Esc>:call ToggleRelativeNumber()<CR>a
+" Relative numbering is pretty useful for motions (3g, 5k...). However I'd
+" prefer to have a way for switching relative numbers with a single map.
+nmap <F5> :set invrelativenumber<CR>
+imap <F5> <ESC>:set invrelativenumber<CR>a
