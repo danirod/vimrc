@@ -9,8 +9,17 @@
 " suit your needs and to make the changes yours. Attribution to this vimrc
 " is not required although is thanked.
 
-" Disable toolbar
+" Disable toolbar and scrollbars
 set guioptions-=T
+set guioptions-=r
+set guioptions-=R
+set guioptions-=l
+set guioptions-=L
+
+" Disable menubar (not on macOS, not tested, though)
+if has("gui_gtk2") || has("win32") || has("win64")
+    set guioptions-=m
+end
 
 " Was this recently added to GVim? I thought it only worked on MacVim.
 set linespace=1
@@ -21,9 +30,9 @@ set columns=120
 
 " Set font. It depends on which operating system I'm using.
 if has("win32") || has("win64")
-    set guifont=Consolas:h11
+    set guifont=Fira Mono:h10,Consolas:h11,Courier\ New:h10
 elseif has("gui_gtk2")
-    set guifont=GohuFont\ 10,Ubuntu\ Mono\ 13,DejaVu\ Sans\ Mono\ 10
+    set guifont=Fira\ Mono\ 9
 elseif has("gui_macvim")
-    set guifont=Menlo:h13
+    set guifont=Fira Mono:h11,Menlo:h12
 endif

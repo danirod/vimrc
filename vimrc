@@ -37,6 +37,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ap/vim-buftabline'
+Plug 'mattn/emmet-vim'
+Plug 'editorconfig/editorconfig-vim'
 
 " Language support
 Plug 'wlangstroth/vim-racket'
@@ -46,7 +48,7 @@ Plug 'tpope/vim-endwise'
 Plug 'alvan/vim-closetag'
 
 " Colorschemes
-Plug 'chriskempson/base16-vim'
+Plug 'cschlueter/vim-wombat'
 
 call plug#end()
 
@@ -88,23 +90,23 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.xml.erb,*.xml"
 if &t_Co > 2 || has("gui_running")
    syntax on
    set colorcolumn=80
+   silent! color wombat
 endif
 
-" Are we supporting a full color pallete?
+" Extra fancyness if full pallete is supported.
 if &t_Co >= 256 || has("gui_running")
-    try
-        color base16-solarized-dark
-    catch /^Vim\%((\a\+)\)\=:E185/
-    endtry
+    set cursorline
+    set cursorcolumn
+    silent! color wombat256
 endif
 
-" Identify trailing spaces
+" Trailing spaces
 if &t_Co > 2 || has("gui_running")
-    " We have color. Colorize those bastards!
+    " Because we have color, colourize them
     highlight ExtraWhitespace ctermbg=red guibg=red
     match ExtraWhitespace /\s\+$/
 else
-    " Fallback to listchars method.
+    " Fallback
     set listchars=trail:~
     set list
 endif
@@ -119,7 +121,6 @@ set wildmenu            " enable visual wildmenu
 set nowrap              " don't wrap long lines
 set number              " show line numbers
 set relativenumber      " show numbers as relative by default
-set cursorline          " highlight line where the cursor is
 set showmatch           " higlight matching parentheses and brackets
 
 if &t_Co >= 256 || has("gui_running")
@@ -129,24 +130,23 @@ endif
 " =====================
 " 6. MAPS AND FUNCTIONS
 " =====================
-let mapleader=","       " I GOTCHA, MAPLEADER ಠ_ಠ
-
-" Indent the entire file. Thanks for the suggestion, @ssmatiuri.
-map <Leader>f gg=G
+let mapleader=","
 
 " Make window navigation less painful.
-" this one is taken from https://gist.github.com/JeffreyWay/6753834
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" It is 2016 and I finally did learn about buffers. Time to ditch away tabs.
+" Move CtrlP to CtrlT (CtrlP is for buffers)
+let g:ctrlp_map = '<C-t>'
+
+" Working with buffers is cool.
 set hidden
-nnoremap <C-K> :bprev<CR>
-nnoremap <C-L> :bnext<CR>
-inoremap <C-K> <Esc>:bprev<CR>a
-inoremap <C-L> <Esc>:bnext<CR>a
+map <C-N>  :bnext<CR>
+map <C-P>  :bprev<CR>
+imap <C-N> <Esc>:bnext<CR>a
+imap <C-P> <Esc>:bprev<CR>a
 
 " Relative numbering is pretty useful for motions (3g, 5k...). However I'd
 " prefer to have a way for switching relative numbers with a single map.
