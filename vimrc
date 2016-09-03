@@ -39,6 +39,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ap/vim-buftabline'
 Plug 'mattn/emmet-vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'Valloric/YouCompleteMe'
 
 " Language support
 Plug 'wlangstroth/vim-racket'
@@ -46,6 +47,8 @@ Plug 'tfnico/vim-gradle'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'alvan/vim-closetag'
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
 
 " Colorschemes
 Plug 'cschlueter/vim-wombat'
@@ -70,6 +73,7 @@ set softtabstop=4           " remove a full pseudo-TAB when i press <BS>
 " Modify some other settings about files
 set encoding=utf-8          " always use unicode (god damnit, windows)
 set backspace=indent,eol,start " backspace always works on insert mode
+set hidden
 
 " =============================
 " 4. SPECIFIC FILETYPE SETTINGS
@@ -82,6 +86,10 @@ autocmd FileType ruby,eruby setlocal sw=2 sts=2
 autocmd FileType yaml setlocal sw=2 sts=2
 
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.xml.erb,*.xml"
+
+"let g:racer_cmd="/Users/danirod/.cargo/bin/racer"
+"let $RUST_SRC_PATH="/usr/local/src/rustc/src"
+
 
 " ================
 " 5. COLORS AND UI
