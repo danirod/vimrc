@@ -33,14 +33,16 @@ else
 end
 
 " Plug-ins
-Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ap/vim-buftabline'
 Plug 'mattn/emmet-vim'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'Valloric/YouCompleteMe'
+
+" YouCompleteMe is overkill to install unless I actually need it. Uncomment
+" if C/C++/Rust is planned to be developer on the machine vimrc is running in.
+" Plug 'Valloric/YouCompleteMe'
 
 " Language support
 Plug 'wlangstroth/vim-racket'
@@ -53,6 +55,7 @@ Plug 'racer-rust/vim-racer'
 
 " Colorschemes
 Plug 'cschlueter/vim-wombat'
+Plug 'altercation/vim-colors-solarized'
 
 call plug#end()
 
@@ -99,14 +102,14 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.xml.erb,*.xml"
 if &t_Co > 2 || has("gui_running")
    syntax on
    set colorcolumn=80
-   silent! color wombat
+   silent! color solarized
+   set background=dark
 endif
 
 " Extra fancyness if full pallete is supported.
 if &t_Co >= 256 || has("gui_running")
     set cursorline
     set cursorcolumn
-    silent! color wombat256
 endif
 
 " Trailing spaces
@@ -156,11 +159,6 @@ map <C-N>  :bnext<CR>
 map <C-P>  :bprev<CR>
 imap <C-N> <Esc>:bnext<CR>a
 imap <C-P> <Esc>:bprev<CR>a
-
-" NERDTree: map ,nt for toggling NERDTree. Faster than the old :NT command
-" since I don't have to hold Shift whenever I want to display NERDTree.
-nmap <Leader>nt :NERDTreeToggle<cr>
-:let g:NERDTreeWinSize=20
 
 " Relative numbering is pretty useful for motions (3g, 5k...). However I'd
 " prefer to have a way for switching relative numbers with a single map.
