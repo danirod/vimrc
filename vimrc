@@ -164,3 +164,8 @@ imap <C-P> <Esc>:bprev<CR>a
 " prefer to have a way for switching relative numbers with a single map.
 nmap <F5> :set invrelativenumber<CR>
 imap <F5> <ESC>:set invrelativenumber<CR>a
+
+" Not a NERDtree user anymore. This is more fucking awesome.
+" Learn about netrw: http://vimcasts.org/episodes/the-file-explorer/
+map <C-W>es :split .<CR>
+map <C-W>ev :vsplit .<CR>
