@@ -167,5 +167,8 @@ imap <F5> <ESC>:set invrelativenumber<CR>a
 
 " Not a NERDtree user anymore. This is more fucking awesome.
 " Learn about netrw: http://vimcasts.org/episodes/the-file-explorer/
-map <C-W>es :split .<CR>
-map <C-W>ev :vsplit .<CR>
+let g:netrw_liststyle=1
+let g:netrw_banner=0
+let g:netrw_browse_split=4
+let g:netrw_winsize=30
+map <Leader>nt :Lex<CR>
