@@ -39,6 +39,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ap/vim-buftabline'
 Plug 'mattn/emmet-vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'scrooloose/nerdtree'
 
 " YouCompleteMe is overkill to install unless I actually need it. Uncomment
 " if C/C++/Rust is planned to be developer on the machine vimrc is running in.
@@ -102,8 +103,7 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.xml.erb,*.xml"
 if &t_Co > 2 || has("gui_running")
    syntax on
    set colorcolumn=80
-   silent! color solarized
-   set background=dark
+   silent! color wombat
 endif
 
 " Extra fancyness if full pallete is supported.
@@ -165,10 +165,6 @@ imap <C-P> <Esc>:bprev<CR>a
 nmap <F5> :set invrelativenumber<CR>
 imap <F5> <ESC>:set invrelativenumber<CR>a
 
-" Not a NERDtree user anymore. This is more fucking awesome.
-" Learn about netrw: http://vimcasts.org/episodes/the-file-explorer/
-let g:netrw_liststyle=1
-let g:netrw_banner=0
-let g:netrw_browse_split=4
-let g:netrw_winsize=30
-map <Leader>nt :Lex<CR>
+map <Leader>nt :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen=1
+let NERDTreeWinSize=20
