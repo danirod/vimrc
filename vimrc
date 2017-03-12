@@ -55,9 +55,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 
 " Colorschemes
-Plug 'cschlueter/vim-wombat'
-Plug 'altercation/vim-colors-solarized'
-Plug 'danilo-augusto/vim-afterglow'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -104,7 +102,8 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.xml.erb,*.xml"
 if &t_Co > 2 || has("gui_running")
    syntax on
    set colorcolumn=80
-   silent! color afterglow
+   silent! color gruvbox
+   set background=dark
 endif
 
 " Extra fancyness if full pallete is supported.
