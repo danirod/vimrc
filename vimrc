@@ -15,31 +15,29 @@ if empty(glob("~/.vim/autoload/plug.vim"))
 end
 
 " Init vim-plug plugins
-if !empty(glob("~/.vim/plugins.vim"))
-    call plug#begin('~/.vim/plugged/')
+call plug#begin('~/.vim/plugged/')
 
-    " General purpose plugins
-    Plug 'tpope/vim-fugitive'
-    Plug 'airblade/vim-gitgutter'
-    Plug 'ctrlpvim/ctrlp.vim'
-    Plug 'ap/vim-buftabline'
-    Plug 'mattn/emmet-vim'
-    Plug 'editorconfig/editorconfig-vim'
-    Plug 'scrooloose/nerdtree'
+" General purpose plugins
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ap/vim-buftabline'
+Plug 'mattn/emmet-vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'scrooloose/nerdtree'
 
-    " Language support
-    Plug 'wlangstroth/vim-racket'
-    Plug 'tfnico/vim-gradle'
-    Plug 'tpope/vim-rails'
-    Plug 'tpope/vim-endwise'
-    Plug 'alvan/vim-closetag'
-    Plug 'rust-lang/rust.vim'
-    Plug 'racer-rust/vim-racer'
+" Language support
+Plug 'wlangstroth/vim-racket'
+Plug 'tfnico/vim-gradle'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
+Plug 'alvan/vim-closetag'
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
 
-    " Colorschemes
+" Colorschemes
     Plug 'morhetz/gruvbox'
-    call plug#end()
-end
+call plug#end()
 
 " Stop acting like classic vi
 set nocompatible            " disable vi compatibility mode
