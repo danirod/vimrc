@@ -1,3 +1,15 @@
+# NOTICE: I AM SUNSETTING THIS REPOSITORY SOON
+
+**I spinned-off vimrc from my general [dotfiles][dotfiles] repository three
+years ago because I started playing with things such as plugin managers
+(pathogen, then vundle, then vim-plug) and git submodules and I didn't want to
+mess my dotfiles distribution.**
+
+**However, since I got using vim-plug this repository has become so lightweight
+that it is actually harder for me to bootstrap new installations since I have
+to keep track of two repositories. I'd prefer to put this vimrc back into
+my dotfiles repo now.**
+
 ## About
 
 This my vimrc setup. Keeping your vim setup in a Git repository
@@ -15,44 +27,22 @@ done. I like to browse other vimrc repos here at GitHub and learn
 from their experience. I know my vimrc setup is tiny and modest but
 I'm proud of it.
 
-## Install
+## Requirementsx
 
-### Requirements
+* An UNIX box running Linux, MacOS X or BSD.
+* ViM 8.0, althought it may work with ViM 7.3 / 7.4.
+* curl is required for installing vim-plug.
+* git is required by vim-plug.
 
-* **Linux, MacOS X or Windows**: On Linux and MacOS X it works out of the
-  box. Windows support is experimental but it works as well. See below
-  for Windows specific information.
-* **ViM 7.3**: My setup should work on Vim 7.3 since every plugin I use
-  works on that version. I don't use YCM anymore since I have replaced it.
-* **Git and Curl**: they are required by vim-plug for installing plugins.
+MS Windows used to be supported. I haven't used ViM on Windows for a long
+time so I finally decided to remove Windows specific settings and .ps1 scripts
+from my repository.
 
-### Quick set up
+## Set up
 
-On Linux and MacOS you can run the following one liner:
-
-```sh
-curl -fL https://raw.githubusercontent.com/danirod/vimrc/master/install.sh | sh
-```
-
-On Windows PowerShell you can run the following three liner:
-
-```powershell
-iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/danirod/vimrc/install-script/instal.ps1'))
-```
-
-Should you trust these scripts? It is up to you. I somehow got to trust my
-own scripts. If you just want to download and play with the setup and are
-concerned about the security issues, please read the source code for
-`install.sh` or `install.ps1` by yourself before running the commands or
-run the install process manually.
-
-### Manual set up
-
-Download or clone the project and put it on `~/.vim` on Linux and Mac or on
-`~\vimfiles` on Windows. To install the plugins, you will need to install
-`vim-plug`. Instructions are present on [his README][vim-plug-readme].
-To install the plugins, run `vim +PlugInstall +qall` after installing
-vim-plug.
+This vimrc has been wired so that if vim-plug is not detected it will download
+it and run a PlugInstall to get the plug-in distribution in case it hasn't been
+installed yet.
 
 ## Plugins
 
@@ -78,5 +68,6 @@ you shouldn't play with my toys if you don't want to get hurt.** (This doesn't
 mean my vimrc will hurt you, you know, but this is legal boilerplate to cover
 my ass _in case_ something happens).
 
+[dotfiles]: https://github.com/danirod/dotfiles
 [vim-plug-readme]: https://github.com/junegunn/vim-plug#installation
 [vim-plug]: https://github.com/junegunn/vim-plug
