@@ -8,72 +8,44 @@
 " suit your needs and to make the changes yours. Attribution to this vimrc
 " is not required although is thanked.
 
-" TABLE OF CONTENTS:
-" 1. Generic settings
-" 2. Vim-Plug plugins
-" 3. File settings
-" 4. Specific filetype settings
-" 5. Colors and UI
-" 6. Maps and functions
-
-" ===================
-" 1. GENERIC SETTINGS
-" ===================
-set nocompatible " disable vi compatibility mode
-set history=1000 " increase history size
-
-" =================
-" 2. VIM-PLUG PLUGINS
-" =================
-
 " vim-plug is not installed
 if empty(glob("~/.vim/autoload/plug.vim"))
     silent !curl -fLso ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     autocmd VimEnter * PlugInstall
 end
 
-" Init vim-plug
-if has("win32") || has("win64")
-    call plug#begin('$USERPROFILE/vimfiles/plugged/')
-else
+" Init vim-plug plugins
+if !empty(glob("~/.vim/plugins.vim"))
     call plug#begin('~/.vim/plugged/')
+
+    " General purpose plugins
+    Plug 'tpope/vim-fugitive'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'ap/vim-buftabline'
+    Plug 'mattn/emmet-vim'
+    Plug 'editorconfig/editorconfig-vim'
+    Plug 'scrooloose/nerdtree'
+
+    " Language support
+    Plug 'wlangstroth/vim-racket'
+    Plug 'tfnico/vim-gradle'
+    Plug 'tpope/vim-rails'
+    Plug 'tpope/vim-endwise'
+    Plug 'alvan/vim-closetag'
+    Plug 'rust-lang/rust.vim'
+    Plug 'racer-rust/vim-racer'
+
+    " Colorschemes
+    Plug 'morhetz/gruvbox'
+    call plug#end()
 end
 
-" Plug-ins
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'ap/vim-buftabline'
-Plug 'mattn/emmet-vim'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'scrooloose/nerdtree'
-
-" YouCompleteMe is overkill to install unless I actually need it. Uncomment
-" if C/C++/Rust is planned to be developer on the machine vimrc is running in.
-" Plug 'Valloric/YouCompleteMe'
-
-" Language support
-Plug 'wlangstroth/vim-racket'
-Plug 'tfnico/vim-gradle'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-endwise'
-Plug 'alvan/vim-closetag'
-Plug 'rust-lang/rust.vim'
-Plug 'racer-rust/vim-racer'
-
-" Colorschemes
-Plug 'morhetz/gruvbox'
-
-call plug#end()
-
-" ================
-" 3. FILE SETTINGS
-" ================
-
-" 70s are over and swap files are part of the past.
-" If you need to backup something, use Git, for God's sake.
-set noswapfile
-set nobackup
+" Stop acting like classic vi
+set nocompatible            " disable vi compatibility mode
+set history=1000            " increase history size
+set noswapfile              " don't create swapfiles
+set nobackup                " don't backup, use git!
 
 " Modify indenting settings
 set autoindent              " autoindent always ON.
@@ -86,25 +58,15 @@ set encoding=utf-8          " always use unicode (god damnit, windows)
 set backspace=indent,eol,start " backspace always works on insert mode
 set hidden
 
-" =============================
-" 4. SPECIFIC FILETYPE SETTINGS
-" =============================
-
 " Some programming languages work better when only 2 spaces padding is used.
 autocmd FileType html,css,sass,scss,javascript setlocal sw=2 sts=2
 autocmd FileType json setlocal sw=2 sts=2
 autocmd FileType ruby,eruby setlocal sw=2 sts=2
 autocmd FileType yaml setlocal sw=2 sts=2
 
+" Required for alvan/vim-closetag
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.xml.erb,*.xml"
 
-"let g:racer_cmd="/Users/danirod/.cargo/bin/racer"
-"let $RUST_SRC_PATH="/usr/local/src/rustc/src"
-
-
-" ================
-" 5. COLORS AND UI
-" ================
 " Are we supporting colors?
 if &t_Co > 2 || has("gui_running")
    syntax on
@@ -119,13 +81,11 @@ if &t_Co >= 256 || has("gui_running")
     set cursorcolumn
 endif
 
-" Trailing spaces
+" Mark trailing spaces depending on whether we have a fancy terminal or not
 if &t_Co > 2 || has("gui_running")
-    " Because we have color, colourize them
     highlight ExtraWhitespace ctermbg=red guibg=red
     match ExtraWhitespace /\s\+$/
 else
-    " Fallback
     set listchars=trail:~
     set list
 endif
@@ -142,13 +102,6 @@ set number              " show line numbers
 set relativenumber      " show numbers as relative by default
 set showmatch           " higlight matching parentheses and brackets
 
-if &t_Co >= 256 || has("gui_running")
-    set cursorcolumn    " cursor column is fine but only with enough colors
-endif
-
-" =====================
-" 6. MAPS AND FUNCTIONS
-" =====================
 let mapleader=","
 
 " Make window navigation less painful.
@@ -161,7 +114,6 @@ map <C-l> <C-w>l
 let g:ctrlp_map = '<C-t>'
 
 " Working with buffers is cool.
-set hidden
 map <C-N>  :bnext<CR>
 map <C-P>  :bprev<CR>
 imap <C-N> <Esc>:bnext<CR>a
