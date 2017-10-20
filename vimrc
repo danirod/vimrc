@@ -27,16 +27,15 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
 
 " Language support
-Plug 'wlangstroth/vim-racket'
+Plug 'sheerun/vim-polyglot'
 Plug 'tfnico/vim-gradle'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'alvan/vim-closetag'
-Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 
 " Colorschemes
-    Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 " Stop acting like classic vi
