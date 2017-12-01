@@ -40,6 +40,7 @@ Plug 'slashmili/alchemist.vim'
 
 " Colorschemes
 Plug 'morhetz/gruvbox'
+Plug 'jaapie/vim-colours-dusk'
 call plug#end()
 
 " Stop acting like classic vi
@@ -72,7 +73,7 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.xml.erb,*.xml"
 if &t_Co > 2 || has("gui_running")
    syntax on
    set colorcolumn=80
-   silent! color gruvbox
+   silent! color Dusk
    set background=dark
 endif
 
