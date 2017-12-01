@@ -25,6 +25,8 @@ Plug 'ap/vim-buftabline'
 Plug 'mattn/emmet-vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
+Plug 'mileszs/ack.vim'
+Plug 'vimwiki/vimwiki'
 
 " Language support
 Plug 'sheerun/vim-polyglot'
@@ -126,3 +128,12 @@ imap <F5> <ESC>:set invrelativenumber<CR>a
 map <Leader>nt :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen=1
 let NERDTreeWinSize=20
+
+" ack
+nnoremap <C-T> :Ack!<Space>
+if executable('ag')
+    let g:ackprg = 'ag --vimgrep'
+endif
+
+" vimwiki
+let g:vimwiki_list = [{'path': '~/.vimwiki/'}]
