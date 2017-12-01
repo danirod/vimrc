@@ -112,8 +112,8 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" Move CtrlP to CtrlT (CtrlP is for buffers)
-let g:ctrlp_map = '<C-t>'
+" Ctrl-P remapping
+let g:ctrlp_map = '<Leader>,'
 
 " Working with buffers is cool.
 map <C-N>  :bnext<CR>
