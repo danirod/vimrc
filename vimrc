@@ -33,6 +33,8 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'alvan/vim-closetag'
 Plug 'racer-rust/vim-racer'
+Plug 'elixir-editors/vim-elixir'
+Plug 'slashmili/alchemist.vim'
 
 " Colorschemes
 Plug 'morhetz/gruvbox'
