@@ -1,14 +1,11 @@
-# NOTICE: I AM SUNSETTING THIS REPOSITORY SOON
+# This repository has been archived
 
-**I spinned-off vimrc from my general [dotfiles][dotfiles] repository three
-years ago because I started playing with things such as plugin managers
-(pathogen, then vundle, then vim-plug) and git submodules and I didn't want to
-mess my dotfiles distribution.**
-
-**However, since I got using vim-plug this repository has become so lightweight
-that it is actually harder for me to bootstrap new installations since I have
-to keep track of two repositories. I'd prefer to put this vimrc back into
-my dotfiles repo now.**
+**I moved to nvim and I merged my nvim settings into my general purpose
+[dotfiles][dotfiles] repository. You can see [my nvim settings here][nvim]. My
+nvim settings are based on the settings on this repository. However, some
+settings that are nvim defaults have been removed, such as lastmode,
+nocompatible... You can keep using this repository, but I don't plan on
+updating it.**
 
 ## About
 
@@ -69,5 +66,6 @@ mean my vimrc will hurt you, you know, but this is legal boilerplate to cover
 my ass _in case_ something happens).
 
 [dotfiles]: https://github.com/danirod/dotfiles
+[nvim]: https://github.com/danirod/dotfiles/tree/master/nvim/.config/nvim
 [vim-plug-readme]: https://github.com/junegunn/vim-plug#installation
 [vim-plug]: https://github.com/junegunn/vim-plug
