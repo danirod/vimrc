@@ -1,11 +1,14 @@
-# This repository has been archived
+# This repository is being unarchived
 
-**I moved to nvim and I merged my nvim settings into my general purpose
-[dotfiles][dotfiles] repository. You can see [my nvim settings here][nvim]. My
-nvim settings are based on the settings on this repository. However, some
-settings that are nvim defaults have been removed, such as lastmode,
-nocompatible... You can keep using this repository, but I don't plan on
-updating it.**
+I'm moving back from nvim to vim. The reasons will be disclosed in the
+future, but it has to do with vim being ubiquous enough to have it
+available, where as neovim usually isn't. Newer settings made to
+[my nvim settings][nvim] will be backported from my
+[dotfiles repo][dotfiles].
+
+---
+
+# danirod's vimrc
 
 ## About
 
