@@ -38,9 +38,6 @@ Plug 'racer-rust/vim-racer'
 Plug 'elixir-editors/vim-elixir'
 Plug 'slashmili/alchemist.vim'
 
-" Colorschemes
-Plug 'morhetz/gruvbox'
-Plug 'jaapie/vim-colours-dusk'
 call plug#end()
 
 " Stop acting like classic vi
@@ -72,15 +69,22 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.xml.erb,*.xml"
 " Are we supporting colors?
 if &t_Co > 2 || has("gui_running")
    syntax on
+
+   " I don't use third party themes anymore, I just extend the default theme.
+    highlight CursorLine cterm=underline ctermbg=NONE
+    highlight Folded cterm=reverse ctermfg=8 ctermbg=0
+    highlight TabLineFill cterm=reverse ctermfg=8 ctermbg=0
+    highlight VertSplit guibg=NONE cterm=NONE ctermbg=NONE
+    highlight LineNr ctermfg=8
+
+   " Color-column settings.
    set colorcolumn=80
-   silent! color Dusk
-   set background=dark
+   highlight ColorColumn ctermbg=0 ctermfg=8 cterm=reverse
 endif
 
 " Extra fancyness if full pallete is supported.
 if &t_Co >= 256 || has("gui_running")
     set cursorline
-    set cursorcolumn
 endif
 
 " Mark trailing spaces depending on whether we have a fancy terminal or not
