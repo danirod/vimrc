@@ -110,20 +110,8 @@ set showmatch           " higlight matching parentheses and brackets
 
 let mapleader=","
 
-" Make window navigation less painful.
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-
 " Ctrl-P remapping
 let g:ctrlp_map = '<Leader>,'
-
-" Working with buffers is cool.
-map <C-N>  :bnext<CR>
-map <C-P>  :bprev<CR>
-imap <C-N> <Esc>:bnext<CR>a
-imap <C-P> <Esc>:bprev<CR>a
 
 " Relative numbering is pretty useful for motions (3g, 5k...). However I'd
 " prefer to have a way for switching relative numbers with a single map.
