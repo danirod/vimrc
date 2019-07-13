@@ -24,7 +24,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ap/vim-buftabline'
 Plug 'mattn/emmet-vim'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'scrooloose/nerdtree'
 Plug 'mileszs/ack.vim'
 Plug 'vimwiki/vimwiki'
 
@@ -104,9 +103,6 @@ let g:ctrlp_map = '<Leader>,'
 nmap <F5> :set invrelativenumber<CR>
 imap <F5> <ESC>:set invrelativenumber<CR>a
 
-map <Leader>nt :NERDTreeToggle<CR>
-let NERDTreeQuitOnOpen=1
-let NERDTreeWinSize=20
 
 " ack
 nnoremap <C-T> :Ack!<Space>
