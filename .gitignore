@@ -6,3 +6,5 @@ autoload/plug.vim
 # This is where vim-plug stores stuff
 plugged/
 
+# This is the directory where persistent undo will be stored.
+undodir/
