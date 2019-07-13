@@ -1,6 +1,9 @@
 [submodule "pack/danirod/start/nerdtree"]
 	path = pack/danirod/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
+[submodule "pack/danirod/start/undotree"]
+	path = pack/danirod/start/undotree
+	url = https://github.com/mbbill/undotree.git
 [submodule "pack/theme/start/vim-dim"]
 	path = pack/theme/start/vim-dim
 	url = https://github.com/jeffkreeftmeijer/vim-dim

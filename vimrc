@@ -48,6 +48,10 @@ set nobackup                " don't backup, use git!
 " Enable filetype
 filetype indent plugin on
 
+" Persist undo history between file editing sessions.
+set undofile
+set undodir=~/.vim/undodir
+
 " Modify indenting settings
 set autoindent              " autoindent always ON.
 
