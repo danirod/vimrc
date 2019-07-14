@@ -25,6 +25,9 @@
 [submodule "pack/danirod/start/vim-fugitive"]
 	path = pack/danirod/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule "pack/danirod/start/vim-gitgutter"]
+	path = pack/danirod/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
 [submodule "pack/danirod/start/vim-numbertoggle"]
 	path = pack/danirod/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
