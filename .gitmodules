@@ -13,6 +13,9 @@
 [submodule "pack/danirod/start/undotree"]
 	path = pack/danirod/start/undotree
 	url = https://github.com/mbbill/undotree.git
+[submodule "pack/danirod/start/vim-bookmarks"]
+	path = pack/danirod/start/vim-bookmarks
+	url = https://github.com/MattesGroeger/vim-bookmarks
 [submodule "pack/danirod/start/vim-numbertoggle"]
 	path = pack/danirod/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
