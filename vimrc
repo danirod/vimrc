@@ -18,7 +18,6 @@ end
 call plug#begin('~/.vim/plugged/')
 
 " General purpose plugins
-Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-buftabline'
 Plug 'mattn/emmet-vim'
