@@ -10,6 +10,9 @@
 [submodule "pack/danirod/start/undotree"]
 	path = pack/danirod/start/undotree
 	url = https://github.com/mbbill/undotree.git
+[submodule "pack/danirod/start/vim-numbertoggle"]
+	path = pack/danirod/start/vim-numbertoggle
+	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
 [submodule "pack/danirod/start/vimwiki"]
 	path = pack/danirod/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki
