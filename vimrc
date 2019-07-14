@@ -48,9 +48,6 @@ set nobackup                " don't backup, use git!
 
 " Modify indenting settings
 set autoindent              " autoindent always ON.
-set expandtab               " expand tabs
-set shiftwidth=4            " spaces for autoindenting
-set softtabstop=4           " remove a full pseudo-TAB when i press <BS>
 
 " Modify some other settings about files
 set encoding=utf-8          " always use unicode (god damnit, windows)
