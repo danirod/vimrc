@@ -76,6 +76,9 @@
 [submodule "pack/deoplete/start/deoplete.nvim"]
 	path = pack/deoplete/start/deoplete.nvim
 	url = https://github.com/Shougo/deoplete.nvim
+[submodule "pack/deoplete/start/LanguageClient-neovim"]
+	path = pack/deoplete/start/LanguageClient-neovim
+	url = https://github.com/autozimu/LanguageClient-neovim
 [submodule "pack/deoplete/start/neco-syntax"]
 	path = pack/deoplete/start/neco-syntax
 	url = https://github.com/Shougo/neco-syntax
