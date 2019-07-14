@@ -67,12 +67,18 @@
 [submodule "pack/danirod/start/vimwiki"]
 	path = pack/danirod/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki
+[submodule "pack/deoplete/start/deoplete-clang"]
+	path = pack/deoplete/start/deoplete-clang
+	url = https://github.com/deoplete-plugins/deoplete-clang
 [submodule "pack/deoplete/start/deoplete-jedi"]
 	path = pack/deoplete/start/deoplete-jedi
 	url = https://github.com/deoplete-plugins/deoplete-jedi
 [submodule "pack/deoplete/start/deoplete.nvim"]
 	path = pack/deoplete/start/deoplete.nvim
 	url = https://github.com/Shougo/deoplete.nvim
+[submodule "pack/deoplete/start/neoinclude.vim"]
+	path = pack/deoplete/start/neoinclude.vim
+	url = https://github.com/Shougo/neoinclude.vim
 [submodule "pack/nvim/opt/nvim-yarp"]
 	path = pack/nvim/opt/nvim-yarp
 	url = https://github.com/roxma/nvim-yarp
