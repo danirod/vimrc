@@ -18,7 +18,6 @@ end
 call plug#begin('~/.vim/plugged/')
 
 " General purpose plugins
-Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-buftabline'
 Plug 'mattn/emmet-vim'
 Plug 'editorconfig/editorconfig-vim'
@@ -63,6 +62,10 @@ if &t_Co > 2
 	highlight Folded cterm=reverse ctermbg=0 ctermfg=8
 	highlight VertSplit cterm=NONE ctermbg=NONE ctermfg=8
 	highlight Conceal cterm=NONE ctermbg=NONE ctermfg=8
+
+	highlight DiffAdd ctermfg=green cterm=bold
+	highlight DiffDelete ctermfg=red cterm=bold
+	highlight DiffChange ctermfg=yellow
 
 	set colorcolumn=80
 endif
