@@ -43,6 +43,9 @@
 [submodule "pack/theme/start/vim-airline-themes"]
 	path = pack/theme/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "pack/theme/start/vim-devicons"]
+	path = pack/theme/start/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons
 [submodule "pack/theme/start/vim-dim"]
 	path = pack/theme/start/vim-dim
 	url = https://github.com/jeffkreeftmeijer/vim-dim
