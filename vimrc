@@ -23,7 +23,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-buftabline'
 Plug 'mattn/emmet-vim'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'mileszs/ack.vim'
 
 " Language support
 Plug 'sheerun/vim-polyglot'
@@ -101,10 +100,3 @@ let mapleader=","
 " prefer to have a way for switching relative numbers with a single map.
 nmap <F5> :set invrelativenumber<CR>
 imap <F5> <ESC>:set invrelativenumber<CR>a
-
-
-" ack
-nnoremap <C-T> :Ack!<Space>
-if executable('ag')
-    let g:ackprg = 'ag --vimgrep'
-endif
