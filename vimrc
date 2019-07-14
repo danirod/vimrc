@@ -57,38 +57,30 @@ set hidden
 " Required for alvan/vim-closetag
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.xml.erb,*.xml"
 
-" Are we supporting colors?
-if &t_Co > 2 || has("gui_running")
-   syntax on
+" Colorscheme configuration.
+if &t_Co > 2
+	syntax on
+	silent! colorscheme dim
+	set background=dark
 
-   " I don't use third party themes anymore, I just extend the default theme.
-    highlight CursorLine cterm=underline ctermbg=NONE
-    highlight Folded cterm=reverse ctermfg=8 ctermbg=0
-    highlight TabLineFill cterm=reverse ctermfg=8 ctermbg=0
-    highlight VertSplit guibg=NONE cterm=NONE ctermbg=NONE
-    highlight LineNr ctermfg=8
+	highlight Folded cterm=reverse ctermbg=0 ctermfg=8
+	highlight VertSplit cterm=NONE ctermbg=NONE ctermfg=8
+	highlight Conceal cterm=NONE ctermbg=NONE ctermfg=8
 
-   " Color-column settings.
-   set colorcolumn=80
-   highlight ColorColumn ctermbg=0 ctermfg=8 cterm=reverse
-endif
-
-" Extra fancyness if full pallete is supported.
-if &t_Co >= 256 || has("gui_running")
-    set cursorline
+	set colorcolumn=80
 endif
 
 " Mark trailing spaces depending on whether we have a fancy terminal or not
-if &t_Co > 2 || has("gui_running")
-    highlight ExtraWhitespace ctermbg=red guibg=red
-    match ExtraWhitespace /\s\+$/
+if &t_Co > 2
+	highlight ExtraWhitespace ctermbg=1
+	match ExtraWhitespace /\s\+$/
 else
-    set listchars=trail:~
-    set list
+	set listchars=trail:~
+	set list
 endif
 
-set fillchars+=vert:\   " Remove unpleasant pipes from vertical splits
-                        " Sauce on this: http://stackoverflow.com/a/9001540
+" Use a specific pipe ch
+set fillchars+=vert:\┊
 
 set showmode            " always show which more are we in
 set laststatus=2        " always show statusbar

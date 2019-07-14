@@ -1,0 +1,3 @@
+[submodule "pack/theme/start/vim-dim"]
+	path = pack/theme/start/vim-dim
+	url = https://github.com/jeffkreeftmeijer/vim-dim
