@@ -27,7 +27,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tfnico/vim-gradle'
 Plug 'tpope/vim-rails'
-Plug 'alvan/vim-closetag'
 Plug 'racer-rust/vim-racer'
 Plug 'elixir-editors/vim-elixir'
 Plug 'slashmili/alchemist.vim'
@@ -54,9 +53,6 @@ set autoindent              " autoindent always ON.
 set encoding=utf-8          " always use unicode (god damnit, windows)
 set backspace=indent,eol,start " backspace always works on insert mode
 set hidden
-
-" Required for alvan/vim-closetag
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.xml.erb,*.xml"
 
 " Colorscheme configuration.
 if &t_Co > 2
