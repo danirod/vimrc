@@ -24,7 +24,6 @@ Plug 'ap/vim-buftabline'
 Plug 'mattn/emmet-vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mileszs/ack.vim'
-Plug 'vimwiki/vimwiki'
 
 " Language support
 Plug 'sheerun/vim-polyglot'
@@ -109,6 +108,3 @@ nnoremap <C-T> :Ack!<Space>
 if executable('ag')
     let g:ackprg = 'ag --vimgrep'
 endif
-
-" vimwiki
-let g:vimwiki_list = [{'path': '~/.vimwiki/'}]
