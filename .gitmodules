@@ -10,6 +10,9 @@
 [submodule "pack/danirod/start/emmet-vim"]
 	path = pack/danirod/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim
+[submodule "pack/danirod/start/goyo.vim"]
+	path = pack/danirod/start/goyo.vim
+	url = https://github.com/junegunn/goyo.vim
 [submodule "pack/danirod/start/indentLine"]
 	path = pack/danirod/start/indentLine
 	url = https://github.com/Yggdroot/indentLine
