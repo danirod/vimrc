@@ -37,6 +37,12 @@
 [submodule "pack/danirod/start/vimwiki"]
 	path = pack/danirod/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki
+[submodule "pack/theme/start/vim-airline"]
+	path = pack/theme/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "pack/theme/start/vim-airline-themes"]
+	path = pack/theme/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
 [submodule "pack/theme/start/vim-dim"]
 	path = pack/theme/start/vim-dim
 	url = https://github.com/jeffkreeftmeijer/vim-dim
