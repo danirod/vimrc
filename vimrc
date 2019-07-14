@@ -57,12 +57,6 @@ set encoding=utf-8          " always use unicode (god damnit, windows)
 set backspace=indent,eol,start " backspace always works on insert mode
 set hidden
 
-" Some programming languages work better when only 2 spaces padding is used.
-autocmd FileType html,css,sass,scss,javascript setlocal sw=2 sts=2
-autocmd FileType json setlocal sw=2 sts=2
-autocmd FileType ruby,eruby setlocal sw=2 sts=2
-autocmd FileType yaml setlocal sw=2 sts=2
-
 " Required for alvan/vim-closetag
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb,*.xml.erb,*.xml"
 
