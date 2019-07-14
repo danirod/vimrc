@@ -4,6 +4,9 @@
 [submodule "pack/danirod/start/ctrlp"]
 	path = pack/danirod/start/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "pack/danirod/start/indentLine"]
+	path = pack/danirod/start/indentLine
+	url = https://github.com/Yggdroot/indentLine
 [submodule "pack/danirod/start/nerdtree"]
 	path = pack/danirod/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
