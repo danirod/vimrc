@@ -16,6 +16,9 @@
 [submodule "pack/danirod/start/vim-bookmarks"]
 	path = pack/danirod/start/vim-bookmarks
 	url = https://github.com/MattesGroeger/vim-bookmarks
+[submodule "pack/danirod/start/vim-closetag"]
+	path = pack/danirod/start/vim-closetag
+	url = https://github.com/alvan/vim-closetag
 [submodule "pack/danirod/start/vim-endwise"]
 	path = pack/danirod/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise
