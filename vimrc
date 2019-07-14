@@ -46,6 +46,9 @@ set history=1000            " increase history size
 set noswapfile              " don't create swapfiles
 set nobackup                " don't backup, use git!
 
+" Enable filetype
+set filetype indent plugin on
+
 " Modify indenting settings
 set autoindent              " autoindent always ON.
 
