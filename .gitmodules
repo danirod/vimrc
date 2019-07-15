@@ -1,6 +1,9 @@
 [submodule "pack/danirod/start/ack.vim"]
 	path = pack/danirod/start/ack.vim
 	url = https://github.com/mileszs/ack.vim
+[submodule "pack/danirod/start/ale"]
+	path = pack/danirod/start/ale
+	url = https://github.com/w0rp/ale
 [submodule "pack/danirod/start/ctrlp"]
 	path = pack/danirod/start/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
