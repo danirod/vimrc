@@ -77,8 +77,8 @@ endif
 " Use a specific pipe ch
 set fillchars+=vert:\┊
 
-set showmode            " always show which more are we in
-set laststatus=2        " always show statusbar
+set noshowmode
+set laststatus=1        " always show statusbar
 set wildmenu            " enable visual wildmenu
 
 set nowrap              " don't wrap long lines
