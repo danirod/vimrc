@@ -106,6 +106,9 @@
 [submodule "pack/nvim/opt/vim-hug-neovim-rpc"]
 	path = pack/nvim/opt/vim-hug-neovim-rpc
 	url = https://github.com/roxma/vim-hug-neovim-rpc
+[submodule "packs/python/start/SimpylFold"]
+	path = pack/python/start/SimpylFold
+	url = https://github.com/tmhedberg/SimpylFold
 [submodule "pack/theme/start/vim-airline"]
 	path = pack/theme/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
