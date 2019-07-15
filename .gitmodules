@@ -4,6 +4,9 @@
 [submodule "pack/danirod/start/ctrlp"]
 	path = pack/danirod/start/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "pack/danirod/start/echodoc.vim"]
+	path = pack/danirod/start/echodoc.vim
+	url = https://github.com/Shougo/echodoc.vim
 [submodule "pack/danirod/start/editorconfig-vim"]
 	path = pack/danirod/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
