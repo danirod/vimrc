@@ -8,23 +8,6 @@
 " suit your needs and to make the changes yours. Attribution to this vimrc
 " is not required although is thanked.
 
-" vim-plug is not installed
-if empty(glob("~/.vim/autoload/plug.vim"))
-    silent !curl -fLso ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall
-end
-
-" Init vim-plug plugins
-call plug#begin('~/.vim/plugged/')
-
-" General purpose plugins
-Plug 'ap/vim-buftabline'
-
-" Language support
-Plug 'racer-rust/vim-racer'
-
-call plug#end()
-
 " Stop acting like classic vi
 set nocompatible            " disable vi compatibility mode
 set history=1000            " increase history size
