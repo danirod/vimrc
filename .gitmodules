@@ -16,6 +16,9 @@
 [submodule "pack/danirod/start/emmet-vim"]
 	path = pack/danirod/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim
+[submodule "pack/danirod/start/FastFold"]
+	path = pack/danirod/start/FastFold
+	url = https://github.com/Konfekt/FastFold
 [submodule "pack/danirod/start/goyo.vim"]
 	path = pack/danirod/start/goyo.vim
 	url = https://github.com/junegunn/goyo.vim
