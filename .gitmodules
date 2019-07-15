@@ -85,6 +85,12 @@
 [submodule "pack/deoplete/start/neoinclude.vim"]
 	path = pack/deoplete/start/neoinclude.vim
 	url = https://github.com/Shougo/neoinclude.vim
+[submodule "pack/deoplete/start/neosnippet.vim"]
+	path = pack/deoplete/start/neosnippet.vim
+	url = https://github.com/Shougo/neosnippet.vim
+[submodule "pack/deoplete/start/neosnippet-snippets"]
+	path = pack/deoplete/start/neosnippet-snippets
+	url = https://github.com/Shougo/neosnippet-snippets
 [submodule "pack/nvim/opt/nvim-yarp"]
 	path = pack/nvim/opt/nvim-yarp
 	url = https://github.com/roxma/nvim-yarp
