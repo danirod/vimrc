@@ -1,10 +1,8 @@
-# This repository is being unarchived
+# This repository is back!
 
-I'm moving back from nvim to vim. The reasons will be disclosed in the
-future, but it has to do with vim being ubiquous enough to have it
-available, where as neovim usually isn't. Newer settings made to
-[my nvim settings][nvim] will be backported from my
-[dotfiles repo][dotfiles].
+I'm moving back to vim from neovim. Reasons will be disclosde in the
+future, but it usually has to do with vim being still more ubiquous
+than neovim.
 
 ---
 
@@ -27,48 +25,43 @@ done. I like to browse other vimrc repos here at GitHub and learn
 from their experience. I know my vimrc setup is tiny and modest but
 I'm proud of it.
 
-## Requirementsx
+## Requirements
 
-* An UNIX box running Linux, MacOS X or BSD.
-* ViM 8.0, althought it may work with ViM 7.3 / 7.4.
-* curl is required for installing vim-plug.
-* git is required by vim-plug.
+* An UNIX box such as macOS, *BSD or GNU/Linux.
+* ViM 8.1. Some plugins will require +conceal.
+* Git is required to fetching the submodules.
 
-MS Windows used to be supported. I haven't used ViM on Windows for a long
-time so I finally decided to remove Windows specific settings and .ps1 scripts
-from my repository.
+MS Windows used to be supported. I haven't used ViM on Windows for a
+long time so I finally decided to remove Windows specific settings and
+.ps1 scripts from my repository.
 
 ## Set up
 
-This vimrc has been wired so that if vim-plug is not detected it will download
-it and run a PlugInstall to get the plug-in distribution in case it hasn't been
-installed yet.
+Remember to pull the Git submodules.
 
 ## Plugins
 
-My vimrc is powered at the moment by [vim-plug][vim-plug]. It is a nice
-alternative to Vundle that I have found to be more simple yet powerful than
-Vundle.
+This vimrc uses vim packs - a recently added feature for Vim 8. No
+external packages required to handle extensions to the language. My
+external packages are added as Git submodules which are set to be
+cloned in pack/.
 
-To see which plugins do I use, read the `vimrc` file. I used to describe here
-my plugin setup, but since this list was almost always outdated, I don't do
-it anymore.
+I used to describe the plugins I use in this section of the README
+file, but I'm withdrawing these, as usually this section goes outdated
+really quick.  Maybe in a future I'll make posts or videos about the
+plugins I use.
 
 ## Disclaimer
 
-This is MY vimrc setup and it is opinionated and made to work how I want.
-Anyone can download and use my vimrc, but unless you and me are the same
-person, you'll probably find things that you don't want. It is OK. Use this
-vimrc as a starting point for making your own.
+This is MY vimrc setup and it is opinionated and made to work how I
+want.  Anyone can download and use my vimrc, but unless you and me are
+the same person, you'll probably find things that you don't want. It is
+OK. Use this vimrc as a starting point for making your own.
 
-**Under no circumstances I am responsible for any kind of damage derived from
-the use of this vimrc on your machine. If you lose files, if your Vim install
-breaks, if something explodes. My vimrc comes with no warranties. Again;
-you shouldn't play with my toys if you don't want to get hurt.** (This doesn't
-mean my vimrc will hurt you, you know, but this is legal boilerplate to cover
-my ass _in case_ something happens).
+**Under no circumstances I am responsible for any kind of damage
+derived from the use of this vimrc on your machine. If you lose files,
+if your Vim install breaks, if something explodes. My vimrc comes with
+no warranties. Again; you shouldn't play with my toys if you don't want
+to get hurt.** (This doesn't mean my vimrc will hurt you, you know, but
+this is legal boilerplate to cover my ass _in case_ something happens).
 
-[dotfiles]: https://github.com/danirod/dotfiles
-[nvim]: https://github.com/danirod/dotfiles/tree/master/nvim/.config/nvim
-[vim-plug-readme]: https://github.com/junegunn/vim-plug#installation
-[vim-plug]: https://github.com/junegunn/vim-plug
