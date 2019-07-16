@@ -13,6 +13,9 @@
 [submodule "pack/danirod/start/tabular"]
 	path = pack/danirod/start/tabular
 	url = https://github.com/godlygeek/tabular
+[submodule "pack/danirod/start/tagbar"]
+	path = pack/danirod/start/tagbar
+	url = https://github.com/majutsushi/tagbar
 [submodule "pack/danirod/start/undotree"]
 	path = pack/danirod/start/undotree
 	url = https://github.com/mbbill/undotree.git
