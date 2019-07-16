@@ -52,6 +52,9 @@
 [submodule "pack/danirod/start/vim-numbertoggle"]
 	path = pack/danirod/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
+[submodule "pack/danirod/start/vim-obsession"]
+	path = pack/danirod/start/vim-obsession
+	url = https://github.com/tpope/vim-obsession
 [submodule "pack/danirod/start/vim-surround"]
 	path = pack/danirod/start/vim-surround
 	url = https://github.com/tpope/vim-surround
