@@ -19,6 +19,9 @@
 [submodule "pack/danirod/start/pear-tree"]
 	path = pack/danirod/start/pear-tree
 	url = https://github.com/tmsvg/pear-tree
+[submodule "pack/danirod/start/splitjoin.vim"]
+	path = pack/danirod/start/splitjoin.vim
+	url = https://github.com/AndrewRadev/splitjoin.vim
 [submodule "pack/danirod/start/tabular"]
 	path = pack/danirod/start/tabular
 	url = https://github.com/godlygeek/tabular
