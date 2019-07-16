@@ -22,7 +22,6 @@ Plug 'ap/vim-buftabline'
 
 " Language support
 Plug 'racer-rust/vim-racer'
-Plug 'slashmili/alchemist.vim'
 
 call plug#end()
 

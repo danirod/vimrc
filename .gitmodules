@@ -127,3 +127,6 @@
 [submodule "pack/ruby/start/vim-rails"]
 	path = pack/ruby/start/vim-rails
 	url = https://github.com/tpope/vim-rails
+[submodule "pack/deoplete/start/alchemist.vim"]
+	path = pack/deoplete/start/alchemist.vim
+	url = https://github.com/slashmili/alchemist.vim
