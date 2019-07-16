@@ -124,3 +124,6 @@
 [submodule "pack/theme/start/vim-dim"]
 	path = pack/theme/start/vim-dim
 	url = https://github.com/jeffkreeftmeijer/vim-dim
+[submodule "pack/ruby/start/vim-rails"]
+	path = pack/ruby/start/vim-rails
+	url = https://github.com/tpope/vim-rails
