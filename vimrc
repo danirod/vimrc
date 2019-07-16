@@ -21,7 +21,6 @@ call plug#begin('~/.vim/plugged/')
 Plug 'ap/vim-buftabline'
 
 " Language support
-Plug 'tpope/vim-rails'
 Plug 'racer-rust/vim-racer'
 Plug 'slashmili/alchemist.vim'
 
