@@ -40,6 +40,9 @@
 [submodule "pack/danirod/start/vim-gitgutter"]
 	path = pack/danirod/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "pack/danirod/start/vim-indent-object"]
+	path = pack/danirod/start/vim-indent-object
+	url = https://github.com/michaeljsmith/vim-indent-object
 [submodule "pack/danirod/start/vim-numbertoggle"]
 	path = pack/danirod/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
