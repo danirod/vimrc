@@ -21,11 +21,8 @@ call plug#begin('~/.vim/plugged/')
 Plug 'ap/vim-buftabline'
 
 " Language support
-Plug 'sheerun/vim-polyglot'
-Plug 'tfnico/vim-gradle'
 Plug 'tpope/vim-rails'
 Plug 'racer-rust/vim-racer'
-Plug 'elixir-editors/vim-elixir'
 Plug 'slashmili/alchemist.vim'
 
 call plug#end()
