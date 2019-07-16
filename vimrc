@@ -19,7 +19,6 @@ call plug#begin('~/.vim/plugged/')
 
 " General purpose plugins
 Plug 'ap/vim-buftabline'
-Plug 'mattn/emmet-vim'
 
 " Language support
 Plug 'sheerun/vim-polyglot'
