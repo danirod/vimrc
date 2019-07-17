@@ -67,6 +67,12 @@ set number              " show line numbers
 set relativenumber      " show numbers as relative by default
 set showmatch           " higlight matching parentheses and brackets
 
+" Shortcuts for switching the buffers
+map <C-N> :bnext<CR>
+map <C-P> :bprev<CR>
+imap <C-N> <Esc>:bnext<CR>i
+imap <C-P> <Esc>:bprev<CR>i
+
 let mapleader=","
 
 " Relative numbering is pretty useful for motions (3g, 5k...). However I'd
