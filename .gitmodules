@@ -22,9 +22,6 @@
 [submodule "pack/danirod/start/goyo.vim"]
 	path = pack/danirod/start/goyo.vim
 	url = https://github.com/junegunn/goyo.vim
-[submodule "pack/danirod/start/indentLine"]
-	path = pack/danirod/start/indentLine
-	url = https://github.com/Yggdroot/indentLine
 [submodule "pack/danirod/start/nerdtree"]
 	path = pack/danirod/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
@@ -61,9 +58,6 @@
 [submodule "pack/danirod/start/vim-gitgutter"]
 	path = pack/danirod/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
-[submodule "pack/danirod/start/vim-indent-guides"]
-	path = pack/danirod/start/vim-indent-guides
-	url = https://github.com/nathanaelkane/vim-indent-guides
 [submodule "pack/danirod/start/vim-indent-object"]
 	path = pack/danirod/start/vim-indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object
