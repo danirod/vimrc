@@ -29,10 +29,7 @@ set lines=35
 set columns=120
 
 " Set font. It depends on which operating system I'm using.
-if has("win32") || has("win64")
-    set guifont=Fira Mono:h10,Consolas:h11,Courier\ New:h10
-elseif has("gui_gtk2")
-    set guifont=Fira\ Mono\ 9,Monospace 10
-elseif has("gui_macvim")
-    set guifont=Fira Mono:h11,Menlo:h12
-endif
+set guifont=Menlo:h13
+
+colorscheme default
+set background=dark
