@@ -112,6 +112,9 @@
 [submodule "pack/theme/start/vim-airline-themes"]
 	path = pack/theme/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "pack/ruby/start/vim-bundler"]
+	path = pack/ruby/start/vim-bundler
+	url = https://github.com/tpope/vim-bundler
 [submodule "pack/theme/start/vim-dim"]
 	path = pack/theme/start/vim-dim
 	url = https://github.com/jeffkreeftmeijer/vim-dim
