@@ -83,3 +83,12 @@ let mapleader=","
 " prefer to have a way for switching relative numbers with a single map.
 nmap <F5> :set invrelativenumber<CR>
 imap <F5> <ESC>:set invrelativenumber<CR>a
+
+" Clean hidden buffers (https://stackoverflow.com/a/8459043/2033517)
+function DeleteHiddenBuffers()
+    let tpbl=[]
+    call map(range(1, tabpagenr('$')), 'extend(tpbl, tabpagebuflist(v:val))')
+    for buf in filter(range(1, bufnr('$')), 'bufexists(v:val) && index(tpbl, v:val)==-1')
+        silent execute 'bwipeout' buf
+    endfor
+endfunction
