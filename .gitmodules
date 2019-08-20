@@ -79,6 +79,9 @@
 [submodule "pack/danirod/start/vimwiki"]
 	path = pack/danirod/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki
+[submodule "pack/deoplete/start/alchemist.vim"]
+	path = pack/deoplete/start/alchemist.vim
+	url = https://github.com/slashmili/alchemist.vim
 [submodule "pack/deoplete/start/deoplete-clang"]
 	path = pack/deoplete/start/deoplete-clang
 	url = https://github.com/deoplete-plugins/deoplete-clang
@@ -121,6 +124,3 @@
 [submodule "pack/ruby/start/vim-rails"]
 	path = pack/ruby/start/vim-rails
 	url = https://github.com/tpope/vim-rails
-[submodule "pack/deoplete/start/alchemist.vim"]
-	path = pack/deoplete/start/alchemist.vim
-	url = https://github.com/slashmili/alchemist.vim
