@@ -70,6 +70,9 @@
 [submodule "pack/danirod/start/vim-polyglot"]
 	path = pack/danirod/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
+[submodule "pack/danirod/start/vim-unimpaired"]
+	path = pack/danirod/start/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
 [submodule "pack/danirod/start/vim-surround"]
 	path = pack/danirod/start/vim-surround
 	url = https://github.com/tpope/vim-surround
