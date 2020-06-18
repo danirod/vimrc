@@ -124,3 +124,6 @@
 [submodule "pack/ruby/start/vim-rails"]
 	path = pack/ruby/start/vim-rails
 	url = https://github.com/tpope/vim-rails
+[submodule "pack/danirod/start/close-buffers.vim"]
+	path = pack/danirod/start/close-buffers.vim
+	url = https://github.com/Asheq/close-buffers.vim
