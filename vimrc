@@ -83,3 +83,6 @@ let mapleader=","
 " prefer to have a way for switching relative numbers with a single map.
 nmap <F5> :set invrelativenumber<CR>
 imap <F5> <ESC>:set invrelativenumber<CR>a
+
+" Double ESC the terminal to exit terminal-job mode.
+tnoremap <Esc><Esc> <C-\><C-n>
