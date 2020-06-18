@@ -5,7 +5,8 @@ let g:ale_linters = {
 	\ 'python': ['pylint', 'flake8'],
 	\ 'typescript': ['prettier'],
 	\ 'ruby': ['rubocop'],
-	\ 'vuejs': ['eslint', 'vls'],
+	\ 'vue': ['eslint', 'stylelint', 'vls'],
+	\ 'vuejs': ['eslint', 'stylelint', 'vls'],
 	\ }
 let g:ale_fixers = {
 	\ 'c': ['clang-format'],
@@ -13,5 +14,6 @@ let g:ale_fixers = {
 	\ 'python': ['black'],
 	\ 'typescript': ['prettier', 'eslint', 'tslint'],
 	\ 'ruby': ['rubocop'],
+	\ 'vue': ['prettier'],
 	\ 'vuejs': ['prettier'],
 	\ }
