@@ -32,8 +32,6 @@ set hidden
 " Colorscheme configuration.
 if &t_Co > 2
 	syntax on
-	silent! colorscheme dim
-	set background=dark
 
 	highlight Folded cterm=reverse ctermbg=0 ctermfg=8
 	highlight VertSplit cterm=NONE ctermbg=NONE ctermfg=8
@@ -45,7 +43,7 @@ if &t_Co > 2
 
 	set colorcolumn=80
 
-	" Sometimes I see the syntax be out of sync
+	" Syntax often gets messed up on files with multiple languages
 	noremap <F12> <Esc>:syntax sync fromstart<CR>
 	inoremap <F12> <C-o>:syntax sync fromstart<CR>
 endif
