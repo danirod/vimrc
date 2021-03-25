@@ -115,6 +115,9 @@
 [submodule "pack/theme/start/vim-airline-themes"]
 	path = pack/theme/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "pack/theme/start/nord-vim"]
+	path = pack/theme/start/nord-vim
+	url = https://github.com/arcticicestudio/nord-vim
 [submodule "pack/ruby/start/vim-bundler"]
 	path = pack/ruby/start/vim-bundler
 	url = https://github.com/tpope/vim-bundler

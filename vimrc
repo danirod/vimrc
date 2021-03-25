@@ -32,6 +32,7 @@ set hidden
 " Colorscheme configuration.
 if &t_Co > 2
 	syntax on
+	color nord
 
 	highlight Folded cterm=reverse ctermbg=0 ctermfg=8
 	highlight VertSplit cterm=NONE ctermbg=NONE ctermfg=8
