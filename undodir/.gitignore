@@ -1,0 +1,6 @@
+# This file serves two purposes
+# 1. Create an undodir when the vimrc is cloned (vim won't create it for you).
+# 2. Prevent accidentally commit my entire computer history
+*
+!.gitignore
+
