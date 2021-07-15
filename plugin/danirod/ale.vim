@@ -24,3 +24,8 @@ let g:ale_fixers = {
 	\ 'vue': ['prettier'],
 	\ 'vuejs': ['prettier'],
 	\ }
+
+if isdirectory('/usr/local/llvm12')
+	let g:ale_c_clangd_executable = '/usr/local/bin/clang-format12'
+	let g:ale_c_clangformat_executable = '/usr/local/bin/clang-format12'
+endif

@@ -6,3 +6,9 @@ let g:LanguageClient_serverCommands = {
     \ 'ruby': ['~/.rbenv/shims/solargraph', 'stdio'],
     \ 'rust': ['rls']
     \ }
+
+" clang
+if isdirectory('/usr/local/llvm12')
+	" FreeBSD + clang-12
+	let g:LanguageClient_serverCommands['c'] = ['clangd12']
+endif
