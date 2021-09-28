@@ -4,7 +4,8 @@ let g:LanguageClient_serverCommands = {
     \ 'css': ['css-languageserver', '--stdio'],
     \ 'typescript': ['javascript-typescript-stdio'],
     \ 'ruby': ['~/.rbenv/shims/solargraph', 'stdio'],
-    \ 'rust': ['rls']
+    \ 'rust': ['rls'],
+    \ 'c': ['clangd']
     \ }
 
 " clang

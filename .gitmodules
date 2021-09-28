@@ -79,18 +79,9 @@
 [submodule "pack/deoplete/start/alchemist.vim"]
 	path = pack/deoplete/start/alchemist.vim
 	url = https://github.com/slashmili/alchemist.vim
-[submodule "pack/deoplete/start/deoplete.nvim"]
-	path = pack/deoplete/start/deoplete.nvim
-	url = https://github.com/Shougo/deoplete.nvim
 [submodule "pack/deoplete/start/LanguageClient-neovim"]
 	path = pack/deoplete/start/LanguageClient-neovim
 	url = https://github.com/autozimu/LanguageClient-neovim
-[submodule "pack/nvim/opt/nvim-yarp"]
-	path = pack/nvim/opt/nvim-yarp
-	url = https://github.com/roxma/nvim-yarp
-[submodule "pack/nvim/opt/vim-hug-neovim-rpc"]
-	path = pack/nvim/opt/vim-hug-neovim-rpc
-	url = https://github.com/roxma/vim-hug-neovim-rpc
 [submodule "pack/theme/start/vim-airline"]
 	path = pack/theme/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline

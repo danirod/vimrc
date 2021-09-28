@@ -1,5 +1,4 @@
 setlocal sw=2 sts=2 nonumber norelativenumber nocursorline
-call deoplete#custom#buffer_option('auto_complete', v:false)
 
 " Disable ALE unless saving
 let ale_lint_on_text_changed = 'never'
