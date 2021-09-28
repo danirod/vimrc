@@ -1,2 +1,2 @@
-autocmd! gitgutter CursorHold,CursorHoldI
+" autocmd! gitgutter CursorHold,CursorHoldI
 
