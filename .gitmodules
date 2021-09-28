@@ -85,9 +85,6 @@
 [submodule "pack/deoplete/start/deoplete-clang"]
 	path = pack/deoplete/start/deoplete-clang
 	url = https://github.com/deoplete-plugins/deoplete-clang
-[submodule "pack/deoplete/start/deoplete-jedi"]
-	path = pack/deoplete/start/deoplete-jedi
-	url = https://github.com/deoplete-plugins/deoplete-jedi
 [submodule "pack/deoplete/start/deoplete.nvim"]
 	path = pack/deoplete/start/deoplete.nvim
 	url = https://github.com/Shougo/deoplete.nvim
