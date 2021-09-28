@@ -64,9 +64,6 @@
 [submodule "pack/danirod/start/vim-numbertoggle"]
 	path = pack/danirod/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
-[submodule "pack/danirod/start/vim-obsession"]
-	path = pack/danirod/start/vim-obsession
-	url = https://github.com/tpope/vim-obsession
 [submodule "pack/danirod/start/vim-polyglot"]
 	path = pack/danirod/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
@@ -82,21 +79,12 @@
 [submodule "pack/deoplete/start/alchemist.vim"]
 	path = pack/deoplete/start/alchemist.vim
 	url = https://github.com/slashmili/alchemist.vim
-[submodule "pack/deoplete/start/deoplete-clang"]
-	path = pack/deoplete/start/deoplete-clang
-	url = https://github.com/deoplete-plugins/deoplete-clang
 [submodule "pack/deoplete/start/deoplete.nvim"]
 	path = pack/deoplete/start/deoplete.nvim
 	url = https://github.com/Shougo/deoplete.nvim
 [submodule "pack/deoplete/start/LanguageClient-neovim"]
 	path = pack/deoplete/start/LanguageClient-neovim
 	url = https://github.com/autozimu/LanguageClient-neovim
-[submodule "pack/deoplete/start/neco-syntax"]
-	path = pack/deoplete/start/neco-syntax
-	url = https://github.com/Shougo/neco-syntax
-[submodule "pack/deoplete/start/neoinclude.vim"]
-	path = pack/deoplete/start/neoinclude.vim
-	url = https://github.com/Shougo/neoinclude.vim
 [submodule "pack/nvim/opt/nvim-yarp"]
 	path = pack/nvim/opt/nvim-yarp
 	url = https://github.com/roxma/nvim-yarp
