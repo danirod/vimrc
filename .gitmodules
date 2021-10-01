@@ -76,12 +76,6 @@
 [submodule "pack/danirod/start/vimwiki"]
 	path = pack/danirod/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki
-[submodule "pack/deoplete/start/alchemist.vim"]
-	path = pack/deoplete/start/alchemist.vim
-	url = https://github.com/slashmili/alchemist.vim
-[submodule "pack/deoplete/start/LanguageClient-neovim"]
-	path = pack/deoplete/start/LanguageClient-neovim
-	url = https://github.com/autozimu/LanguageClient-neovim
 [submodule "pack/theme/start/vim-airline"]
 	path = pack/theme/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
@@ -97,3 +91,15 @@
 [submodule "pack/danirod/start/close-buffers.vim"]
 	path = pack/danirod/start/close-buffers.vim
 	url = https://github.com/Asheq/close-buffers.vim
+[submodule "pack/lsp/start/vim-lsp"]
+	path = pack/lsp/start/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp
+[submodule "pack/lsp/start/vim-lsp-settings"]
+	path = pack/lsp/start/vim-lsp-settings
+	url = https://github.com/mattn/vim-lsp-settings
+[submodule "pack/lsp/start/asyncomplete-lsp"]
+	path = pack/lsp/start/asyncomplete-lsp
+	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim
+[submodule "pack/lsp/start/asyncomplete"]
+	path = pack/lsp/start/asyncomplete
+	url = https://github.com/prabirshrestha/asyncomplete.vim
