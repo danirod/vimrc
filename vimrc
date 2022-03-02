@@ -14,6 +14,25 @@ set history=1000            " increase history size
 set noswapfile              " don't create swapfiles
 set nobackup                " don't backup, use git!
 
+if has('nvim')
+	packadd doctor.nvim
+endif
+
+if has('nvim')
+	packadd nvim-lspconfig
+	packadd nvim-lsp-installer
+	packadd nvim-cmp
+	packadd cmp-nvim-lsp
+	packadd luasnip
+	packadd lsp-zero
+	lua require('initlsp')
+else
+	packadd asyncomplete
+	packadd asyncomplete-lsp
+	packadd vim-lsp
+	packadd vim-lsp-settings
+end
+
 " Enable filetype
 filetype indent plugin on
 
@@ -32,7 +51,7 @@ set hidden
 " Colorscheme configuration.
 if &t_Co > 2
 	syntax on
-	color default
+	color PaperColor
 	set background=dark
 
 	highlight Folded cterm=reverse ctermbg=0 ctermfg=8
@@ -86,3 +105,4 @@ imap <F5> <ESC>:set invrelativenumber<CR>a
 
 " Double ESC the terminal to exit terminal-job mode.
 tnoremap <Esc><Esc> <C-\><C-n>
+
