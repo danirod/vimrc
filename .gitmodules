@@ -109,8 +109,8 @@
 [submodule "pack/danirod/start/vim-test"]
 	path = pack/danirod/start/vim-test
 	url = https://github.com/vim-test/vim-test
-[submodule "pack/danirod/opt/doctor->nvim"]
-	path = pack/danirod/opt/doctor->nvim
+[submodule "pack/danirod/opt/doctor.nvim"]
+	path = pack/danirod/opt/doctor.nvim
 	url = https://github.com/iagoleal/doctor.nvim
 [submodule "pack/lsp/opt/nvim-lspconfig"]
 	path = pack/lsp/opt/nvim-lspconfig
