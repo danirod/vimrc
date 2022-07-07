@@ -11,6 +11,7 @@ let g:ale_linters = {
 	\ 'rust': ['rustfmt'],
 	\ 'vue': ['eslint', 'stylelint', 'vls'],
 	\ 'vuejs': ['eslint', 'stylelint', 'vls'],
+	\ 'svelte': ['eslint'],
 	\ }
 let g:ale_fixers = {
 	\ 'c': ['clang-format'],
@@ -23,6 +24,7 @@ let g:ale_fixers = {
 	\ 'rust': ['rustfmt'],
 	\ 'vue': ['prettier'],
 	\ 'vuejs': ['prettier'],
+	\ 'svelte': ['prettier'],
 	\ }
 
 if isdirectory('/usr/local/llvm12')
