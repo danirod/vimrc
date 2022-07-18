@@ -51,7 +51,6 @@ set hidden
 " Colorscheme configuration.
 if &t_Co > 2
 	syntax on
-	color PaperColor
 	set background=dark
 
 	highlight Folded cterm=reverse ctermbg=0 ctermfg=8
@@ -91,17 +90,15 @@ set relativenumber      " show numbers as relative by default
 set showmatch           " higlight matching parentheses and brackets
 
 " Shortcuts for switching the buffers
-map <C-N> :bnext<CR>
-map <C-P> :bprev<CR>
-imap <C-N> <Esc>:bnext<CR>i
-imap <C-P> <Esc>:bprev<CR>i
+nmap <C-N> :bnext<CR>
+nmap <C-P> :bprev<CR>
 
 let mapleader=","
 
 " Relative numbering is pretty useful for motions (3g, 5k...). However I'd
 " prefer to have a way for switching relative numbers with a single map.
 nmap <F5> :set invrelativenumber<CR>
-imap <F5> <ESC>:set invrelativenumber<CR>a
+imap <F5> <C-o>:set invrelativenumber<CR>
 
 " Double ESC the terminal to exit terminal-job mode.
 tnoremap <Esc><Esc> <C-\><C-n>

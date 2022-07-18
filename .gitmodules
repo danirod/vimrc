@@ -130,6 +130,6 @@
 [submodule "pack/lsp/opt/luasnip"]
 	path = pack/lsp/opt/luasnip
 	url = https://github.com/L3MON4D3/LuaSnip
-[submodule "pack/theme/start/papercolor-theme"]
-	path = pack/theme/start/papercolor-theme
-	url = https://github.com/NLKNguyen/papercolor-theme
+[submodule "pack/danirod/start/vim-maximizer"]
+	path = pack/danirod/start/vim-maximizer
+	url = https://github.com/szw/vim-maximizer.git
