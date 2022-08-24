@@ -133,3 +133,6 @@
 [submodule "pack/danirod/start/vim-maximizer"]
 	path = pack/danirod/start/vim-maximizer
 	url = https://github.com/szw/vim-maximizer.git
+[submodule "pack/dap/start/vimspector"]
+	path = pack/dap/start/vimspector
+	url = https://github.com/puremourning/vimspector

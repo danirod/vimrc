@@ -61,6 +61,9 @@ if &t_Co > 2
 	highlight DiffDelete ctermfg=red cterm=bold
 	highlight DiffChange ctermfg=yellow
 
+	highlight Pmenu ctermbg=8 ctermfg=0
+	highlight Pmenusel ctermbg=15 ctermfg=0
+
 	set colorcolumn=80
 
 	" Syntax often gets messed up on files with multiple languages
