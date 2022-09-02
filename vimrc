@@ -14,25 +14,6 @@ set history=1000            " increase history size
 set noswapfile              " don't create swapfiles
 set nobackup                " don't backup, use git!
 
-if has('nvim')
-	packadd doctor.nvim
-endif
-
-if has('nvim')
-	packadd nvim-lspconfig
-	packadd nvim-lsp-installer
-	packadd nvim-cmp
-	packadd cmp-nvim-lsp
-	packadd luasnip
-	packadd lsp-zero
-	lua require('initlsp')
-else
-	packadd asyncomplete
-	packadd asyncomplete-lsp
-	packadd vim-lsp
-	packadd vim-lsp-settings
-end
-
 " Enable filetype
 filetype indent plugin on
 

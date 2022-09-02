@@ -7,54 +7,24 @@
 [submodule "pack/danirod/start/ctrlp"]
 	path = pack/danirod/start/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
-[submodule "pack/danirod/start/echodoc.vim"]
-	path = pack/danirod/start/echodoc.vim
-	url = https://github.com/Shougo/echodoc.vim
 [submodule "pack/danirod/start/editorconfig-vim"]
 	path = pack/danirod/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
-[submodule "pack/danirod/start/emmet-vim"]
-	path = pack/danirod/start/emmet-vim
-	url = https://github.com/mattn/emmet-vim
-[submodule "pack/danirod/start/FastFold"]
-	path = pack/danirod/start/FastFold
-	url = https://github.com/Konfekt/FastFold
-[submodule "pack/danirod/start/goyo.vim"]
-	path = pack/danirod/start/goyo.vim
-	url = https://github.com/junegunn/goyo.vim
 [submodule "pack/danirod/start/nerdtree"]
 	path = pack/danirod/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
 [submodule "pack/danirod/start/pear-tree"]
 	path = pack/danirod/start/pear-tree
 	url = https://github.com/tmsvg/pear-tree
-[submodule "pack/danirod/start/splitjoin.vim"]
-	path = pack/danirod/start/splitjoin.vim
-	url = https://github.com/AndrewRadev/splitjoin.vim
-[submodule "pack/danirod/start/supertab"]
-	path = pack/danirod/start/supertab
-	url = https://github.com/ervandew/supertab
-[submodule "pack/danirod/start/tabular"]
-	path = pack/danirod/start/tabular
-	url = https://github.com/godlygeek/tabular
-[submodule "pack/danirod/start/tagbar"]
-	path = pack/danirod/start/tagbar
-	url = https://github.com/majutsushi/tagbar
 [submodule "pack/danirod/start/undotree"]
 	path = pack/danirod/start/undotree
 	url = https://github.com/mbbill/undotree.git
-[submodule "pack/danirod/start/vim-bookmarks"]
-	path = pack/danirod/start/vim-bookmarks
-	url = https://github.com/MattesGroeger/vim-bookmarks
 [submodule "pack/danirod/start/vim-closetag"]
 	path = pack/danirod/start/vim-closetag
 	url = https://github.com/alvan/vim-closetag
 [submodule "pack/danirod/start/vim-endwise"]
 	path = pack/danirod/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise
-[submodule "pack/danirod/start/vim-fugitive"]
-	path = pack/danirod/start/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive
 [submodule "pack/danirod/start/vim-gitgutter"]
 	path = pack/danirod/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
@@ -91,48 +61,21 @@
 [submodule "pack/danirod/start/close-buffers.vim"]
 	path = pack/danirod/start/close-buffers.vim
 	url = https://github.com/Asheq/close-buffers.vim
-[submodule "pack/lsp/start/vim-lsp"]
-	path = pack/lsp/opt/vim-lsp
-	url = https://github.com/prabirshrestha/vim-lsp
-[submodule "pack/lsp/start/vim-lsp-settings"]
-	path = pack/lsp/opt/vim-lsp-settings
-	url = https://github.com/mattn/vim-lsp-settings
-[submodule "pack/lsp/start/asyncomplete-lsp"]
-	path = pack/lsp/opt/asyncomplete-lsp
-	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim
-[submodule "pack/lsp/start/asyncomplete"]
-	path = pack/lsp/opt/asyncomplete
-	url = https://github.com/prabirshrestha/asyncomplete.vim
-[submodule "pack/danirod/start/vim-auto-save"]
-	path = pack/danirod/start/vim-auto-save
-	url = https://github.com/907th/vim-auto-save
-[submodule "pack/danirod/start/vim-test"]
-	path = pack/danirod/start/vim-test
-	url = https://github.com/vim-test/vim-test
-[submodule "pack/danirod/opt/doctor.nvim"]
-	path = pack/danirod/opt/doctor.nvim
-	url = https://github.com/iagoleal/doctor.nvim
-[submodule "pack/lsp/opt/nvim-lspconfig"]
-	path = pack/lsp/opt/nvim-lspconfig
-	url = https://github.com/neovim/nvim-lspconfig
-[submodule "pack/lsp/opt/nvim-lsp-installer"]
-	path = pack/lsp/opt/nvim-lsp-installer
-	url = https://github.com/williamboman/nvim-lsp-installer
-[submodule "pack/lsp/opt/nvim-cmp"]
-	path = pack/lsp/opt/nvim-cmp
-	url = https://github.com/hrsh7th/nvim-cmp
-[submodule "pack/lsp/opt/cmp-nvim-lsp"]
-	path = pack/lsp/opt/cmp-nvim-lsp
-	url = https://github.com/hrsh7th/cmp-nvim-lsp
-[submodule "pack/lsp/opt/lsp-zero"]
-	path = pack/lsp/opt/lsp-zero
-	url = https://github.com/VonHeikemen/lsp-zero.nvim
-[submodule "pack/lsp/opt/luasnip"]
-	path = pack/lsp/opt/luasnip
-	url = https://github.com/L3MON4D3/LuaSnip
 [submodule "pack/danirod/start/vim-maximizer"]
 	path = pack/danirod/start/vim-maximizer
 	url = https://github.com/szw/vim-maximizer.git
-[submodule "pack/dap/start/vimspector"]
-	path = pack/dap/start/vimspector
-	url = https://github.com/puremourning/vimspector
+[submodule "pack/lsp/start/asyncomplete"]
+	path = pack/lsp/start/asyncomplete
+	url = https://github.com/prabirshrestha/asyncomplete.vim
+[submodule "pack/lsp/start/asyncomplete-lsp"]
+	path = pack/lsp/start/asyncomplete-lsp
+	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim
+[submodule "pack/lsp/start/vim-lsp"]
+	path = pack/lsp/start/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp
+[submodule "pack/lsp/start/vim-lsp-settings"]
+	path = pack/lsp/start/vim-lsp-settings
+	url = https://github.com/mattn/vim-lsp-settings
+[submodule "pack/danirod/start/supertab"]
+	path = pack/danirod/start/supertab
+	url = https://github.com/ervandew/supertab
