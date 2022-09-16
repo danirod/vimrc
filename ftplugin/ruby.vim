@@ -1,5 +1,3 @@
-setlocal sw=2 sts=2
-
 " Disable ALE unless saving
 let ale_lint_on_text_changed = 'never'
 let ale_lint_on_insert_leave = 0
