@@ -1,51 +1,27 @@
-[submodule "pack/danirod/start/ack.vim"]
-	path = pack/shell/start/ack.vim
-	url = https://github.com/mileszs/ack.vim
-[submodule "pack/danirod/start/ale"]
+[submodule "pack/coding/start/ale"]
 	path = pack/coding/start/ale
 	url = https://github.com/w0rp/ale
-[submodule "pack/danirod/start/ctrlp"]
-	path = pack/shell/start/ctrlp
-	url = https://github.com/ctrlpvim/ctrlp.vim
-[submodule "pack/danirod/start/editorconfig-vim"]
+[submodule "pack/coding/start/editorconfig-vim"]
 	path = pack/coding/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
-[submodule "pack/danirod/start/pear-tree"]
-	path = pack/editor/start/pear-tree
-	url = https://github.com/tmsvg/pear-tree
-[submodule "pack/danirod/start/undotree"]
-	path = pack/shell/start/undotree
-	url = https://github.com/mbbill/undotree.git
-[submodule "pack/danirod/start/vim-closetag"]
-	path = pack/editor/start/vim-closetag
-	url = https://github.com/alvan/vim-closetag
-[submodule "pack/danirod/start/vim-endwise"]
-	path = pack/editor/start/vim-endwise
-	url = https://github.com/tpope/vim-endwise
-[submodule "pack/danirod/start/vim-gitgutter"]
-	path = pack/shell/start/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter
-[submodule "pack/danirod/start/vim-numbertoggle"]
-	path = pack/editor/start/vim-numbertoggle
-	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
-[submodule "pack/danirod/start/vim-polyglot"]
+[submodule "pack/coding/start/vim-polyglot"]
 	path = pack/coding/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
-[submodule "pack/danirod/start/vimwiki"]
-	path = pack/shell/start/vimwiki
-	url = https://github.com/vimwiki/vimwiki
-[submodule "pack/theme/start/vim-airline"]
-	path = pack/theme/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline
-[submodule "pack/theme/start/vim-airline-themes"]
-	path = pack/theme/start/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "pack/danirod/start/close-buffers.vim"]
-	path = pack/shell/start/close-buffers.vim
-	url = https://github.com/Asheq/close-buffers.vim
-[submodule "pack/danirod/start/vim-maximizer"]
-	path = pack/shell/start/vim-maximizer
-	url = https://github.com/szw/vim-maximizer.git
+[submodule "pack/editor/start/pear-tree"]
+	path = pack/editor/start/pear-tree
+	url = https://github.com/tmsvg/pear-tree
+[submodule "pack/editor/start/supertab"]
+	path = pack/editor/start/supertab
+	url = https://github.com/ervandew/supertab
+[submodule "pack/editor/start/vim-closetag"]
+	path = pack/editor/start/vim-closetag
+	url = https://github.com/alvan/vim-closetag
+[submodule "pack/editor/start/vim-endwise"]
+	path = pack/editor/start/vim-endwise
+	url = https://github.com/tpope/vim-endwise
+[submodule "pack/editor/start/vim-numbertoggle"]
+	path = pack/editor/start/vim-numbertoggle
+	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
 [submodule "pack/lsp/start/asyncomplete"]
 	path = pack/lsp/start/asyncomplete
 	url = https://github.com/prabirshrestha/asyncomplete.vim
@@ -58,9 +34,33 @@
 [submodule "pack/lsp/start/vim-lsp-settings"]
 	path = pack/lsp/start/vim-lsp-settings
 	url = https://github.com/mattn/vim-lsp-settings
-[submodule "pack/danirod/start/supertab"]
-	path = pack/editor/start/supertab
-	url = https://github.com/ervandew/supertab
+[submodule "pack/shell/start/ack.vim"]
+	path = pack/shell/start/ack.vim
+	url = https://github.com/mileszs/ack.vim
+[submodule "pack/shell/start/close-buffers.vim"]
+	path = pack/shell/start/close-buffers.vim
+	url = https://github.com/Asheq/close-buffers.vim
+[submodule "pack/shell/start/ctrlp"]
+	path = pack/shell/start/ctrlp
+	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "pack/shell/start/fern.vim"]
 	path = pack/shell/start/fern.vim
 	url = https://github.com/lambdalisue/fern.vim
+[submodule "pack/shell/start/undotree"]
+	path = pack/shell/start/undotree
+	url = https://github.com/mbbill/undotree.git
+[submodule "pack/shell/start/vim-gitgutter"]
+	path = pack/shell/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "pack/shell/start/vim-maximizer"]
+	path = pack/shell/start/vim-maximizer
+	url = https://github.com/szw/vim-maximizer.git
+[submodule "pack/shell/start/vimwiki"]
+	path = pack/shell/start/vimwiki
+	url = https://github.com/vimwiki/vimwiki
+[submodule "pack/theme/start/vim-airline"]
+	path = pack/theme/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "pack/theme/start/vim-airline-themes"]
+	path = pack/theme/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
