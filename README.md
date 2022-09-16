@@ -1,11 +1,3 @@
-# This repository is back!
-
-I'm moving back to vim from neovim. Reasons will be disclosde in the
-future, but it usually has to do with vim being still more ubiquous
-than neovim.
-
----
-
 # danirod's vimrc
 
 ## About
@@ -27,29 +19,34 @@ I'm proud of it.
 
 ## Requirements
 
-* An UNIX box such as macOS, *BSD or GNU/Linux.
-* ViM 8.1. Some plugins will require +conceal.
-* Git is required to fetching the submodules.
+It is tested under the following conditions:
 
-MS Windows used to be supported. I haven't used ViM on Windows for a
-long time so I finally decided to remove Windows specific settings and
-.ps1 scripts from my repository.
+* It works on UNIX and UNIX-like (GNU/Linux, *BSD, macOS...)
+* I mostly use Vim 9.0 nowadays but it should work on Vim 8.2.
+* Git is required to fetch the submodules
+
+I haven't used Vim on Windows for a while so I don't know if it works.
 
 ## Set up
 
 Remember to pull the Git submodules.
 
+* `git submodule init`: will initialize after clone.
+* `git submodule update`: will clone the submodules.
+* `git submodule update --remote`: willñ pull latest updates.
+
 ## Plugins
 
-This vimrc uses vim packs - a recently added feature for Vim 8. No
-external packages required to handle extensions to the language. My
-external packages are added as Git submodules which are set to be
-cloned in pack/.
+I use vim packs, which was added on Vim 8. As you can see, I am using
+gitmodules to handle my plugins, which allows me to pin a specific
+commit in case breaking changes happen.
 
-I used to describe the plugins I use in this section of the README
-file, but I'm withdrawing these, as usually this section goes outdated
-really quick.  Maybe in a future I'll make posts or videos about the
-plugins I use.
+The pack/ directory contains the plugins organized by concern. Inside
+the start/ directory of each concern there are gitmodules.
+
+The configuration for each pack is also stored separately in the plugin/
+folder, which has a similar directory structure grouping each config file
+by concern.
 
 ## Disclaimer
 
