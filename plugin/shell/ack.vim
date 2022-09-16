@@ -7,6 +7,6 @@ let g:ack_mappings = {
 nnoremap <C-T> :Ack!<Space>
 
 " Use silversearcher if available.
-if executable("ag")
-    let g:ackprg = "ag --vimgrep"
+if executable('ag')
+    let g:ackprg = 'ag --vimgrep'
 end

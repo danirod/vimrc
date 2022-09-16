@@ -1,3 +1,5 @@
+scriptencoding utf-8
+
 " It is important to me that every mapping from NERDTree continues to work.
 " nt = open nerdtree, nf = open nerdtree focusing on the current buffer
 nmap <Leader>nt :Fern . -drawer -width=30 -toggle<CR>
