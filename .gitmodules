@@ -10,9 +10,6 @@
 [submodule "pack/danirod/start/editorconfig-vim"]
 	path = pack/danirod/start/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
-[submodule "pack/danirod/start/nerdtree"]
-	path = pack/danirod/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree
 [submodule "pack/danirod/start/pear-tree"]
 	path = pack/danirod/start/pear-tree
 	url = https://github.com/tmsvg/pear-tree
@@ -70,3 +67,6 @@
 [submodule "pack/danirod/start/supertab"]
 	path = pack/danirod/start/supertab
 	url = https://github.com/ervandew/supertab
+[submodule "pack/shell/start/fern.vim"]
+	path = pack/shell/start/fern.vim
+	url = https://github.com/lambdalisue/fern.vim
