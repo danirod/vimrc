@@ -3,6 +3,7 @@ let g:ale_fix_on_save = 1
 let g:ale_linters = {
 	\ 'c': ['clang'],
 	\ 'cpp': ['clang'],
+	\ 'go': ['gopls', 'gofmt'],
 	\ 'h': ['clang'],
 	\ 'javascript': ['eslint'],
 	\ 'python': ['pylint', 'flake8'],
@@ -16,6 +17,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
 	\ 'c': ['clang-format'],
 	\ 'cpp': ['clang-format'],
+	\ 'go': ['gofmt', 'goimports'],
 	\ 'h': ['clang-format'],
 	\ 'javascript': ['prettier', 'eslint'],
 	\ 'python': ['black'],
