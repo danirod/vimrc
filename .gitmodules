@@ -43,9 +43,6 @@
 [submodule "pack/shell/start/ctrlp"]
 	path = pack/shell/start/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
-[submodule "pack/shell/start/fern.vim"]
-	path = pack/shell/start/fern.vim
-	url = https://github.com/lambdalisue/fern.vim
 [submodule "pack/shell/start/undotree"]
 	path = pack/shell/start/undotree
 	url = https://github.com/mbbill/undotree.git
@@ -64,3 +61,6 @@
 [submodule "pack/theme/start/vim-airline-themes"]
 	path = pack/theme/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "pack/shell/start/nerdtree"]
+	path = pack/shell/start/nerdtree
+	url = https://github.com/preservim/nerdtree
