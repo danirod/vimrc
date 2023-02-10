@@ -33,8 +33,10 @@ if &t_Co > 2
 	highlight DiffDelete ctermfg=red cterm=bold
 	highlight DiffChange ctermfg=yellow
 
-	highlight Pmenu ctermbg=8 ctermfg=0
-	highlight Pmenusel ctermbg=15 ctermfg=0
+	highlight Pmenu ctermbg=0 ctermfg=8
+	highlight Pmenusel ctermbg=236 cterm=bold ctermfg=15
+	highlight PmenuSbar ctermbg=234
+	highlight PmenuThumb ctermbg=241
 
 	" Syntax often gets messed up on files with multiple languages
 	noremap <F12> <Esc>:syntax sync fromstart<CR>
