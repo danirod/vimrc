@@ -34,15 +34,9 @@
 [submodule "pack/lsp/start/vim-lsp-settings"]
 	path = pack/lsp/start/vim-lsp-settings
 	url = https://github.com/mattn/vim-lsp-settings
-[submodule "pack/shell/start/ack.vim"]
-	path = pack/shell/start/ack.vim
-	url = https://github.com/mileszs/ack.vim
 [submodule "pack/shell/start/close-buffers.vim"]
 	path = pack/shell/start/close-buffers.vim
 	url = https://github.com/Asheq/close-buffers.vim
-[submodule "pack/shell/start/ctrlp"]
-	path = pack/shell/start/ctrlp
-	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "pack/shell/start/undotree"]
 	path = pack/shell/start/undotree
 	url = https://github.com/mbbill/undotree.git
@@ -64,3 +58,9 @@
 [submodule "pack/shell/start/nerdtree"]
 	path = pack/shell/start/nerdtree
 	url = https://github.com/preservim/nerdtree
+[submodule "pack/shell/start/fzf"]
+	path = pack/shell/start/fzf
+	url = https://github.com/junegunn/fzf
+[submodule "pack/shell/start/fzf-vim"]
+	path = pack/shell/start/fzf-vim
+	url = https://github.com/junegunn/fzf.vim
