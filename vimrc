@@ -33,7 +33,7 @@ if &t_Co > 2
 	highlight DiffDelete ctermfg=red cterm=bold
 	highlight DiffChange ctermfg=yellow
 
-	highlight Pmenu ctermbg=0 ctermfg=8
+	highlight Pmenu ctermbg=0 ctermfg=245
 	highlight Pmenusel ctermbg=236 cterm=bold ctermfg=15
 	highlight PmenuSbar ctermbg=234
 	highlight PmenuThumb ctermbg=241
