@@ -10,3 +10,8 @@ nnoremap <C-T> :Ack!<Space>
 if executable('ag')
     let g:ackprg = 'ag --vimgrep'
 end
+
+" Use ripgrep if available.
+if executable('rg')
+    let g:ackprg = 'rg --vimgrep'
+end
