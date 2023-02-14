@@ -6,6 +6,6 @@ let NERDTreeWinSize=35
 let NERDTreeCaseSensitiveSort=1
 let NERDTreeWinPos = "right"
 
-autocmd VimEnter * NERDTree | wincmd p
+" autocmd VimEnter * NERDTree | wincmd p
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
