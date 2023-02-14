@@ -64,3 +64,6 @@
 [submodule "pack/shell/start/fzf-vim"]
 	path = pack/shell/start/fzf-vim
 	url = https://github.com/junegunn/fzf.vim
+[submodule "pack/shell/start/vim-floaterm"]
+	path = pack/shell/start/vim-floaterm
+	url = https://github.com/voldikss/vim-floaterm
