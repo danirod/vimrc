@@ -1,5 +1,5 @@
-command Tig FloatermNew tig
-command Lazygit FloatermNew lazygit
+command Tig FloatermNew --width=0.8 --height=0.8 tig
+command Lazygit FloatermNew --width=0.9 --height=0.9 lazygit
 
 nmap <Leader>tig :Tig<CR>
 nmap <Leader>lazy :Lazygit<CR>
