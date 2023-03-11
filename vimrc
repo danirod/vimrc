@@ -22,21 +22,11 @@ set nobackup
 " Colorscheme configuration
 if &t_Co > 2
 	syntax on
-	set background=dark
-	set colorcolumn=80
 
-	highlight Folded cterm=reverse ctermbg=0 ctermfg=8
-	highlight VertSplit cterm=NONE ctermbg=NONE ctermfg=8
-	highlight Conceal cterm=NONE ctermbg=NONE ctermfg=8
-
-	highlight DiffAdd ctermfg=green cterm=bold
-	highlight DiffDelete ctermfg=red cterm=bold
-	highlight DiffChange ctermfg=yellow
-
-	highlight Pmenu ctermbg=0 ctermfg=245
-	highlight Pmenusel ctermbg=236 cterm=bold ctermfg=15
-	highlight PmenuSbar ctermbg=234
-	highlight PmenuThumb ctermbg=241
+	" Nord
+	let g:nord_cursor_line_number_background = 1
+	let g:nord_uniform_diff_background = 1
+	colorscheme nord
 
 	" Syntax often gets messed up on files with multiple languages
 	noremap <F12> <Esc>:syntax sync fromstart<CR>

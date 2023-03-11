@@ -67,3 +67,6 @@
 [submodule "pack/shell/start/vim-floaterm"]
 	path = pack/shell/start/vim-floaterm
 	url = https://github.com/voldikss/vim-floaterm
+[submodule "pack/theme/start/nord-vim"]
+	path = pack/theme/start/nord-vim
+	url = git@github.com:arcticicestudio/nord-vim
