@@ -67,6 +67,9 @@
 [submodule "pack/shell/start/vim-floaterm"]
 	path = pack/shell/start/vim-floaterm
 	url = https://github.com/voldikss/vim-floaterm
+[submodule "pack/editor/start/emmet-vim"]
+	path = pack/editor/start/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
 [submodule "pack/shell/start/vimux"]
 	path = pack/shell/start/vimux
 	url = https://github.com/preservim/vimux
