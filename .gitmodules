@@ -75,4 +75,4 @@
 	url = https://github.com/preservim/vimux
 [submodule "pack/theme/start/nord-vim"]
 	path = pack/theme/start/nord-vim
-	url = git@github.com:arcticicestudio/nord-vim
+	url = https://github.com/arcticicestudio/nord-vim
