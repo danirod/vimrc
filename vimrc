@@ -18,6 +18,7 @@ set undodir=~/.vim/undodir
 set undofile
 set noswapfile
 set nobackup
+set viminfofile=~/.vim/info
 
 " Colorscheme configuration
 if &t_Co > 2
