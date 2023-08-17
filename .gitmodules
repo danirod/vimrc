@@ -37,18 +37,12 @@
 [submodule "pack/shell/start/close-buffers.vim"]
 	path = pack/shell/start/close-buffers.vim
 	url = https://github.com/Asheq/close-buffers.vim
-[submodule "pack/shell/start/undotree"]
-	path = pack/shell/start/undotree
-	url = https://github.com/mbbill/undotree.git
 [submodule "pack/shell/start/vim-gitgutter"]
 	path = pack/shell/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
 [submodule "pack/shell/start/vim-maximizer"]
 	path = pack/shell/start/vim-maximizer
 	url = https://github.com/szw/vim-maximizer.git
-[submodule "pack/shell/start/vimwiki"]
-	path = pack/shell/start/vimwiki
-	url = https://github.com/vimwiki/vimwiki
 [submodule "pack/theme/start/vim-airline"]
 	path = pack/theme/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
@@ -67,12 +61,6 @@
 [submodule "pack/shell/start/vim-floaterm"]
 	path = pack/shell/start/vim-floaterm
 	url = https://github.com/voldikss/vim-floaterm
-[submodule "pack/editor/start/emmet-vim"]
-	path = pack/editor/start/emmet-vim
-	url = https://github.com/mattn/emmet-vim.git
 [submodule "pack/shell/start/vimux"]
 	path = pack/shell/start/vimux
 	url = https://github.com/preservim/vimux
-[submodule "pack/theme/start/nord-vim"]
-	path = pack/theme/start/nord-vim
-	url = https://github.com/arcticicestudio/nord-vim
