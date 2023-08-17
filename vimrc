@@ -22,25 +22,18 @@ set nobackup
 " Colorscheme configuration
 if &t_Co > 2
 	syntax on
+	set background=dark
 
-	" Nord
-	let g:nord_cursor_line_number_background = 1
-	let g:nord_uniform_diff_background = 1
-	colorscheme nord
+	highlight Pmenu ctermbg=blue ctermfg=white
+	highlight PmenuSel ctermbg=blue ctermfg=white cterm=inverse
 
 	" Syntax often gets messed up on files with multiple languages
 	noremap <F12> <Esc>:syntax sync fromstart<CR>
 	inoremap <F12> <C-o>:syntax sync fromstart<CR>
 endif
 
-" Mark trailing spaces depending on whether we have a fancy terminal or not
-if &t_Co > 2
-	highlight ExtraWhitespace ctermbg=1
-	match ExtraWhitespace /\s\+$/
-else
-	set listchars=trail:~
-	set list
-endif
+highlight ExtraWhitespace ctermbg=1
+match ExtraWhitespace /\s\+$/
 
 set fillchars+=vert:\┊
 set noshowmode
