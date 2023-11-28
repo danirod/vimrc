@@ -1,64 +1,91 @@
 # danirod's vimrc
 
-## About
+This is my vimrc, the configuration file for my Vim distribution.
 
-This my vimrc setup. Keeping your vim setup in a Git repository
-is cool because you can track the changes you do to your set up,
-you can rollback if something goes wrong, you can branch and
-test new settings while keeping your base setup stable...
+It used to be a big deal for me some years ago, but nowadays my vimrc is
+more frugal and boring.
 
-Also, pushing my vimrc to GitHub is nice because I have an
-online backup. In case I format my PC or want to install vim into
-a new computer, I just have to clone my repository and it's done.
+## Compatibility
 
-There's another reason for pushing my vimrc setup online. You can
-share your setup with everybody, let people learn from what you're
-done. I like to browse other vimrc repos here at GitHub and learn
-from their experience. I know my vimrc setup is tiny and modest but
-I'm proud of it.
+This vimrc is used daily on UNIX and UNIX-like systems: GNU/Linux, \*BSD
+and macOS. Compatibility with Windows is unknown.
 
-## Requirements
+I mostly use Vim 9.0 at the moment but there should be compatibility
+with Vim 8.2, which is currently the version in the oldstable branch of
+Debian.
 
-It is tested under the following conditions:
+It should work with Neovim, but I don't use Neovim, so I am not aware.
 
-* It works on UNIX and UNIX-like (GNU/Linux, *BSD, macOS...)
-* I mostly use Vim 9.0 nowadays but it should work on Vim 8.2.
-* Git is required to fetch the submodules
+## Configuration
 
-I haven't used Vim on Windows for a while so I don't know if it works.
+Pull the Git submdoules:
 
-## Set up
-
-Remember to pull the Git submodules.
-
-* `git submodule init`: will initialize after clone.
-* `git submodule update`: will clone the submodules.
-* `git submodule update --remote`: willñ pull latest updates.
+- `git submodule init`: will initialize after clone.
+- `git submodule update`: will clone the submodules.
+- `git submodule update --remote`: willñ pull latest updates.
 
 ## Plugins
 
-I use vim packs, which was added on Vim 8. As you can see, I am using
-gitmodules to handle my plugins, which allows me to pin a specific
-commit in case breaking changes happen.
+I don't use a package manager, I switched to vim-packs. After cloning,
+submodules have to be initialized using `make fetch-packs` or
+`gmake fetch-packs`. I organize the packs in the pack/ directory by
+concern, although not a lot of plugins are in use nowadays so I might
+just move them all to a single folder again.
 
-The pack/ directory contains the plugins organized by concern. Inside
-the start/ directory of each concern there are gitmodules.
+The configuration for each plugin is in the plugin/ folder and it
+mirrors the directory structure of the pack/ directory.
 
-The configuration for each pack is also stored separately in the plugin/
-folder, which has a similar directory structure grouping each config file
-by concern.
+This is the list of plugins that I use:
+
+- **pack/coding**: these packs are related to the programming
+  experience.
+  - [editorconfig-vim]: not just for the projects where I have an
+    .editorconfig, I have a global .editorconfig file in my home
+    directory to set the defaults for many languages among all my text
+    editors. This is why you will not find `tabstop`, `shiftwidth`,
+    `textwidth` and `softtabstop` settings in my vimrc.
+  - [vim-polyglot]: it is the biggest plugin, but it is worth having it
+    and being able to just open any kind of file no matter how obscure
+    it is and be received by a colourful window, so it stays.
+- **pack/lsp**: these packs are related to the Language Server Protocol.
+  - [ale]: it is used for linting and formatting, something that vim-lsp
+    doesn't usually handle very well.
+  - [asyncomplete]: it is used to automatically unfold the popup menu as
+    I am writing, to help me finish my words.
+  - [asyncomplete-lsp]: this is the bridge to have asyncomplete read
+    completions from vim-lsp.
+  - [vim-lsp]: currently the LSP plugin I use, supports many features
+    such as rename, go to implementation and such.
+  - [vim-lsp-settings]: a repository of LSP configurations for many
+    programming languages.
+- **pack/shell**: these packs are related to extending Vim itself.
+  - [fzf]: the fuzzy finder, includes the core plugin to add fzf to Vim.
+  - [fzf-vim]: extends the fzf plugin, adding many commands such as
+    Files or Buffers.
+  - [nerdtree]: the classic tree explorer plugin. There are other tree
+    explorers out there, but I prefer this.
+
+[ale]: https://github.com/dense-analysis/ale
+[asyncomplete]: https://github.com/prabirshrestha/asyncomplete.vim
+[asyncomplete-lsp]:
+  https://github.com/prabirshrestha/asyncomplete-lsp.vim
+[editorconfig-vim]: https://github.com/editorconfig/editorconfig-vim
+[fzf]: https://github.com/junegunn/fzf
+[fzf-vim]: https://github.com/junegunn/fzf.vim
+[nerdtree]: https://github.com/preservim/nerdtree
+[vim-lsp]: https://github.com/prabirshrestha/vim-lsp
+[vim-lsp-settings]: https://github.com/mattn/vim-lsp-settings
+[vim-polyglot]: https://github.com/sheerun/vim-polyglot
 
 ## Disclaimer
 
-This is MY vimrc setup and it is opinionated and made to work how I
-want.  Anyone can download and use my vimrc, but unless you and me are
-the same person, you'll probably find things that you don't want. It is
-OK. Use this vimrc as a starting point for making your own.
+This is my vimrc and it is opinionated to reflect how I want to work.
+You can download this vimrc, but you will probably find things that
+don't work for you, and that's OK. You can read from them and then
+change yours.
 
-**Under no circumstances I am responsible for any kind of damage
-derived from the use of this vimrc on your machine. If you lose files,
-if your Vim install breaks, if something explodes. My vimrc comes with
-no warranties. Again; you shouldn't play with my toys if you don't want
-to get hurt.** (This doesn't mean my vimrc will hurt you, you know, but
-this is legal boilerplate to cover my ass _in case_ something happens).
+I am not responsible if downloading and using this vimrc deletes files,
+makes you lose data or makes your computer blow up.
 
+I am not responsible if at any point I git push something that breaks
+changes.

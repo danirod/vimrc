@@ -37,13 +37,12 @@ highlight ExtraWhitespace ctermbg=1
 match ExtraWhitespace /\s\+$/
 
 set fillchars+=vert:\┊
-set noshowmode
+set ruler
 set laststatus=1
 set wildmenu
 set wildoptions=pum
 
 set nowrap
-set number
 set showmatch
 
 nmap <C-N> :bnext<CR>

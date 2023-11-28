@@ -6,7 +6,7 @@ let NERDTreeWinSize=35
 let NERDTreeCaseSensitiveSort=1
 let NERDTreeWinPos = "right"
 
-let NERDTreeIgnore=['\~$', '\.pyc$', '^\.DS_Store$', '^node_modules$', '.git', '.ropeproject', '__pycache__']
+let NERDTreeIgnore=['\~$', '\.pyc$', '^\.DS_Store$', '^node_modules$', '.git$', '.ropeproject', '__pycache__']
 
 " autocmd VimEnter * NERDTree | wincmd p
 
