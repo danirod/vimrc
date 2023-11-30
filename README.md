@@ -3,26 +3,18 @@
 This is my vimrc, the configuration file for my Vim distribution.
 
 It used to be a big deal for me some years ago, but nowadays my vimrc is
-more frugal and boring.
+frugal and boring.
 
 ## Compatibility
 
-This vimrc is used daily on UNIX and UNIX-like systems: GNU/Linux, \*BSD
+This vimrc is used daily on UNIX and UNIX-like systems: GNU/Linux, BSD
 and macOS. Compatibility with Windows is unknown.
 
 I mostly use Vim 9.0 at the moment but there should be compatibility
 with Vim 8.2, which is currently the version in the oldstable branch of
 Debian.
 
-It should work with Neovim, but I don't use Neovim, so I am not aware.
-
-## Configuration
-
-Pull the Git submdoules:
-
-- `git submodule init`: will initialize after clone.
-- `git submodule update`: will clone the submodules.
-- `git submodule update --remote`: willñ pull latest updates.
+It should work with Neovim, but I don't use Neovim, so it is unknown.
 
 ## Plugins
 
@@ -62,8 +54,8 @@ This is the list of plugins that I use:
   - [fzf]: the fuzzy finder, includes the core plugin to add fzf to Vim.
   - [fzf-vim]: extends the fzf plugin, adding many commands such as
     Files or Buffers.
-  - [nerdtree]: the classic tree explorer plugin. There are other tree
-    explorers out there, but I prefer this.
+  - [nerdtree]: the classic tree explorer plugin. Mostly to create files
+    and directories.
 
 [ale]: https://github.com/dense-analysis/ale
 [asyncomplete]: https://github.com/prabirshrestha/asyncomplete.vim
