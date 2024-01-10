@@ -1,5 +1,13 @@
 let g:ale_fix_on_save = 1
 
+function s:danirod_save_without_format()
+	let g:ale_fix_on_save = 0
+	write
+	let g:ale_fix_on_save = 1
+endfunction
+
+command! ALESaveWithoutFormat :call s:danirod_save_without_format()
+
 let g:ale_linters = {
 	\ 'c': ['clang'],
 	\ 'cpp': ['clang'],
