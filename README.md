@@ -69,6 +69,10 @@ This is the list of plugins that I use:
 [vim-lsp-settings]: https://github.com/mattn/vim-lsp-settings
 [vim-polyglot]: https://github.com/sheerun/vim-polyglot
 
+## Updating the packs
+
+To update the packs, use `make update-packs` or `gmake update-packs`.
+
 ## Disclaimer
 
 This is my vimrc and it is opinionated to reflect how I want to work.
