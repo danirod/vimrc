@@ -42,6 +42,9 @@ set laststatus=1
 set wildmenu
 set wildoptions=pum
 
+set foldlevelstart=999
+nnoremap <tab> za
+
 set nowrap
 set showmatch
 
