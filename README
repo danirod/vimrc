@@ -1,0 +1,10 @@
+This is my vimrc, the configuration file for my Vim distribution. Currently, my
+vimrc is more frugal and boring that what it used to be.
+
+Plugins are installed as regular packs and tracked by Git submodule. The
+provided GNUmakefile is used to fetch and update the packs.
+
+The online backup is hosted at https://git.danirod.es/dotfiles/vimrc. There is
+a GitHub mirror, but it is read only. Please, do not send GitHub pull requests.
+They cannot be accepted due to a GDPR policy and they will be closed
+automatically.

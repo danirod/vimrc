@@ -1,0 +1,30 @@
+---
+name: Close PR
+
+on:
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue_number,
+              body: "Due to GDPR policies, pull requests cannot be accepted currently. Sorry.",
+            })
+            github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              state_reason: 'not_planned',
+            })
