@@ -25,20 +25,28 @@ if &t_Co > 2
 	syntax on
 	set background=dark
 
-	highlight Pmenu ctermbg=blue ctermfg=white
-	highlight PmenuSel ctermbg=blue ctermfg=white cterm=inverse
+	highlight VertSplit cterm=NONE
+	highlight Pmenu ctermbg=black ctermfg=white
+	highlight PmenuSel ctermbg=black ctermfg=white cterm=inverse
+	highlight StatusLine cterm=bold ctermbg=blue ctermfg=yellow
+	highlight ExtraWhitespace ctermbg=1
+
+	augroup colorscheme_changed
+		autocmd!
+		autocmd ColorScheme * highlight ExtraWhitespace ctermbg=1
+		autocmd ColorScheme * highlight Pmenu
+	augroup end
 
 	" Syntax often gets messed up on files with multiple languages
 	noremap <F12> <Esc>:syntax sync fromstart<CR>
 	inoremap <F12> <C-o>:syntax sync fromstart<CR>
 endif
 
-highlight ExtraWhitespace ctermbg=1
 match ExtraWhitespace /\s\+$/
 
-set fillchars+=vert:\┊
+set fillchars+=vert:\│
 set ruler
-set laststatus=1
+set laststatus=2
 set wildmenu
 set wildoptions=pum
 
