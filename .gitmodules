@@ -25,3 +25,7 @@
 [submodule "pack/shell/start/fzf-vim"]
 	path = pack/shell/start/fzf-vim
 	url = https://github.com/junegunn/fzf.vim
+[submodule "pack/lsp/start/vim-lsp-settings"]
+	path = pack/lsp/start/vim-lsp-settings
+	url = https://github.com/danirod/vim-lsp-settings
+	branch = jdtls-refresh-pattern
